@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+
+{% load pytags %}
+
+<html>
+<head lang="en">
+
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="http://bootswatch.com/readable/bootstrap.min.css">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="main.css">
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.js"></script>
+    <script type="text/javascript" src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+    <meta charset="UTF-8">
+    <title>
+        The Makova Lab @ Penn State
+    </title>
+</head>
+
+<body>
+
+<div class="col-md-1"></div>
+
+<div class="col-md-10">
+
+<h1 align="center">The Makova Lab at Penn State<br>
+<small>Our laboratory examines genome evolution with a focus on mutations, using computational and experimental approaches.</small></h1>
+
+
+
+<div class="panel-group; col-md-12" id="accordion">
+  <!--Research panel -->
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href="#research">
+          Research
+        </a>
+      </h4>
+    </div>
+    <div id="research" class="panel-collapse collapse in">
+      <div class="panel-body">
+
+
+      <div class="row" >
+      {% for title, img, short, long, badge, color in context.research %}
+        <div class="col-xs-6 col-md-4" style="padding:5px;">
+            <div class="panel panel-{{color}}">
+            <div class="panel-heading">
+              <h2 class="panel-title">
+                <b>{{title}}</b>
+                <span class="badge pull-right">{{badge}}</span>
+              </h2>
+            </div>
+            <div class="panel-body">
+              <p align="justify">{{short}}</p>
+            </div>
+            <div class="panel-footer">
+              <button class="btn btn-{{color}}  btn-xs" data-toggle="modal" data-target="#{{badge}}" title="Do you want to know more?"><i class="fa fa-info"></i></button>
+            </div>
+
+            <!-- Modal -->
+            <div class="modal fade" id="{{badge}}"  tabindex="-1" role="dialog" aria-labelledby="{{badge}}Label">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="{{badge}}Label">{{title}}</h4>
+                  </div>
+                  <div class="modal-body">
+                  <p align="justify">{{long}}</p>
+                  </div>
+
+                  <div class="col-md-12">
+                  <ul class="media-list">
+                  {% for name, job, contact, interest, picture, BADGE in context.people %}
+                  {% if badge in BADGE %}
+                    <li class="media">
+                      <div class="media-left">
+                        <a href="#">
+                          <img class="media-object" src="img/{{picture}}" alt="img/{{picture}}" style="height:150px; width:150px;">
+                        </a>
+                      </div>
+                      <div class="media-body">
+                        <h4 class="media-heading"><strong>{{name}}</strong></h4>
+                        <p align="justify">{{job}}<br>{{contact}}</p>
+                      </div>
+                    </li>
+                  {% endif %}
+                  {% endfor %}
+                  </ul>
+                  </div>
+
+
+                  <div class="col-md-12">
+                  <ul class="media-list">
+                  {% for name, job, picture, BADGE, url in context.collaborators %}
+                  {% if badge in BADGE %}
+                    <li class="media">
+                      <div class="media-left">
+                        <a href="#">
+                          <img class="media-object" src="img/{{picture}}" alt="img/{{picture}}" style="height:150px; width:150px;">
+                        </a>
+                      </div>
+                      <div class="media-body">
+                        <h4 class="media-heading"><strong>{{name}}</strong></h4>
+                        <p align="justify"><a href="{{url}}">{{job}}</a></p>
+                      </div>
+                    </li>
+                  {% endif %}
+                  {% endfor %}
+                  </ul>
+                  </div>
+
+                  <div class="table"> 
+                    <table class="table table-hover">
+                      <tr>
+                        <th><span class="glyphicon glyphicon-calendar"></span></th>
+                        <th><span class="glyphicon glyphicon-user"></span></th>
+                        <th><span class="glyphicon glyphicon-file"></span></th>
+                        <th><span class="glyphicon glyphicon-book"></span></th>
+                      </tr>
+                      {% for author, title, journal, year, url, BADGE in context.publications %}
+                      {% if badge in BADGE %}
+                      <tr>
+                        <td>{{year}}</td>
+                        <td>{{author}}</td>
+                        <td><a href="{{url}}">{{title}}</a></td>
+                        <td><em>{{journal}}</em></td>
+                      </tr>
+                      {% endif %}
+                      {% endfor %}
+                    </table>
+                </div>
+                </div>
+              </div>
+            </div>
+
+
+
+
+          </div> <!-- panel -->
+        </div>
+      {% endfor %}
+      </div> <!-- row -->
+
+
+
+      </div> <!--panel-body-->
+    </div>
+  </div>
+
+
+  <!--News panel -->
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href="#news">
+          News
+        </a>
+      </h4>
+    </div>
+    <div id="news" class="panel-collapse collapse">
+      <div class="panel-body">
+
+        <ul class="media-list">
+          {% for news, icon in context.news %}
+          <li class="media">
+            <div class="media-left">
+
+              <i class="media-objet; fa fa-{{icon}}"></i>
+
+<!--              <a href="#">
+                <img class="media-object" src="#" alt="#">
+              </a>
+-->
+            </div>
+            <div class="media-body">
+              <p align="justify">{{news}}</p>
+            </div>
+          </li>
+          {% endfor %}
+        </ul>
+
+
+      </div> <!--panel-body-->
+    </div>
+  </div>
+
+
+  <!--Publications panel -->
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href="#publications">
+          Publications
+        </a>
+      </h4>
+    </div>
+    <div id="publications" class="panel-collapse collapse">
+      <div class="panel-body">
+
+        <div class="col-md-12">
+          <div class="table">
+            <table class="table table-hover">
+              <tr>
+                <th><span class="glyphicon glyphicon-calendar"></span></th>
+                <th><span class="glyphicon glyphicon-user"></span></th>
+                <th><span class="glyphicon glyphicon-file"></span></th>
+                <th><span class="glyphicon glyphicon-book"></span></th>
+                <th></th>
+              </tr>
+              {% for author, title, journal, year, url, badge in context.publications %}
+              <tr>
+                <td>{{year}}</td>
+                <td>{{author}}</td>
+                <td><a href="{{url}}">{{title}}</a></td>
+                <td><em>{{journal}}</em>
+                <td>{% if "R" in badge%}<span class="label label-primary">R</span>{%endif%}
+                    {% if "Mc" in badge%}<span class="label label-success">Mc</span>{%endif%}
+                    {% if "Mt" in badge%}<span class="label label-warning">Mt</span>{%endif%}
+                    {% if "S" in badge%}<span class="label label-info">S</span>{%endif%}
+                    {% if "O" in badge%}<span class="label label-danger">O</span>{%endif%}
+
+                   </td>
+              </tr>
+              {% endfor %}
+            </table>
+          </div>
+        </div>
+
+      </div> <!--panel-body-->
+    </div>
+  </div>
+
+
+  <!-- People panel -->
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href="#people">
+          People
+        </a>
+      </h4>
+    </div>
+    <div id="people" class="panel-collapse collapse">
+      <div class="panel-body">
+
+        <ul class="media-list">
+          {% for name, job, contact, interest, picture, BADGE in context.people %}
+          <li class="media">
+            <div class="media-left">
+              <a href="#">
+                <img class="media-object" src="img/{{picture}}" alt="{{picture}}" style="height:150px; width:150px;">
+              </a>
+            </div>
+            <div class="media-body">
+              <h4 class="media-heading"><strong>{{name}}</strong></h4>
+              <p align="justify">{{job}}<br>{{contact}}<br>{{interest}}</p>
+            </div>
+          </li>
+          {% endfor %}
+        </ul>
+
+
+
+
+
+      </div> <!--panel-body-->
+    </div>
+  </div>
+
+
+
+
+  <!-- Collaborators pannel-->
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href="#collaborators">
+          Collaborators
+        </a>
+      </h4>
+    </div>
+    <div id="collaborators" class="panel-collapse collapse">
+      <div class="panel-body">
+
+
+        <ul class="media-list">
+          {% for name, job, picture, BADGE, url in context.collaborators %}
+          <li class="media">
+            <div class="media-left">
+              <a href="#">
+                <img class="media-object" src="img/{{picture}}" alt="{{picture}}" style="height:150px; width:150px;">
+              </a>
+            </div>
+            <div class="media-body">
+              <h4 class="media-heading"><strong>{{name}}</strong></h4>
+              <a href="{{url}}"><p align="justify">{{job}}</p></a>
+            </div>
+          </li>
+          {% endfor %}
+        </ul>
+
+
+
+
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Join us pannel -->
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href="#joinus">
+          Join Us
+        </a>
+      </h4>
+    </div>
+    <div id="joinus" class="panel-collapse collapse">
+      <div class="panel-body">
+        <div class="col-md-12">
+          <p>Post-doctoral applicants : Please mail a copy of your CV and reference letters to <a href="mailto:kmakova@bx.psu.edu">Kateryna Makova.</a>
+          <br>Graduate students may apply through the <a href="http://www.huck.psu.edu/education">Huck Institutes Program</a> or the <a href="http://bio.psu.edu/graduate-portal/join-our-program">Department of Biology</a>.
+          <br>Rotation candidates may email <a href="mailto:kmakova@bx.psu.edu">Kateryna Makova</a>.</p>
+          <address><strong>Lab address:</strong><br>
+                   305 Wartik Lab<br>
+                   University Park, PA 16802<br>
+                   <abbr title="Phone">Phone:</abbr> (814) 863-1619
+                   <abbr title="Fax">Fax:</abbr> (814) 865-9131
+          </address>
+          <p style="clear:both"><b>Advertised positions:</b><br></p>
+          <p align="justify"><b>Postdoctoral position: Computational Biologist :</b><br>
+
+The <a href="http://www.bx.psu.edu/makova_lab/">Makova lab</a> is looking to hire a computational postdoctoral researcher with knowledge of genomics for a project examining mitochondrial mutations and their transmission in humans from an evolutionary perspective (please see our <a href="http://www.pnas.org/content/111/43/15474.long">recent publication in PNAS</a>. Such knowledge is vital in a clinical setting when transmission risk for pathogenic mutations must be estimated. Our resources and links with medical researchers at Penn State College of Medicine and computational biologists from the <a href="http://usegalaxy.org">Galaxy team</a> put us in a great position to address these questions. A PhD in Computational Biology or related field is required. Candidates should be familiar with scientific programming and statistical analysis techniques. Experience with next-generation sequencing data analyses is desirable. You will be joining an established dynamic group. Penn State is a vibrant scientific community with particular strengths in computational genomics and molecular evolution. Our location, in State College, Pennsylvania, is known for excellent public schools, low cost of living, and numerous opportunities for outdoor activities. The starting date is flexible, with an earlier date preferred. Interested applicants should send a pdf with a CV, a statement of research interests, and contact information of three referees to Kateryna Makova at kdm16@psu.edu, indicating “mtDNA postdoc” in the subject line.</p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Resources pannel -->
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href="#resources">
+          Resources
+        </a>
+      </h4>
+    </div>
+    <div id="resources" class="panel-collapse collapse">
+      <div class="panel-body">
+        <div class="col-md-12">
+
+          <p align="justify"><b>Galaxy</b><br>We contribute our tools to <a href="https://main.g2.bx.psu.edu/">Galaxy</a>, a free software for genomic research.<br><br></p>
+
+          <p align="justify"><b>X inactivation</b><br>Genomic Environment Predicts Expression Patterns on the Human Inactive X Chromosome.<br> Carrel L, Park C, Tyekucheva S, Dunn J, Chiaromonte F, Makova KD. PLoS Genet 2(9): e151. doi:10.1371/journal.pgen.0020151 <br><a href="http://www.bx.psu.edu/makova_lab/Doc/X_Inactivation.htm">Online Supplemental materials</a><br><br></p>
+
+          <p align="justify"><b>Indels</b><br>Human-specific indels identified in the non-coding non-repetitive (NCNR) portion of hg18 according to methods described in <a href="http://www.ncbi.nlm.nih.gov/pubmed/17941704">(Kvikstad et al 2007)</a><br> 
+<a href="http://www.bx.psu.edu/makova_lab/Doc/hg18_NCNRgenome_smallIndels.txt.tar.gz">Online Supplemental materials </a><br><br></p>
+
+          <p align="justify"><b>Duplicate genes</b><br>Coding region structural heterogeneity and turnover of transcription start sites contribute to divergence in expression between duplicate genes Chungoo Park and Kateryna Makova.<br>Genome Biology 2009, 10:R10 (doi:10.1186/gb-2009-10-1-r10)<br><a href="http://www.bx.psu.edu/makova_lab/Doc/FASTA.txt">Duplicate genes from FASTA</a><br><a href="http://www.bx.psu.edu/makova_lab/Doc/TRIBE_MCL.txt">Duplicate genes by TRIBE-MCL</a><br><a href="http://www.bx.psu.edu/makova_lab/Doc/Ave_GNF1Hdata.txt">Expression data for human tissues in U133A and GNF1H affymetrix arrays</a><br><a href="http://www.bx.psu.edu/makova_lab/Doc/List_Map_Probe_Genes.txt">Genes mapping to probes with a one-to-one correspondence</a><br><br></p>
+
+          <p align="justify"><b>X and Y-added Region</b><br>Evolution and Survival on Eutherian Sex Chromosomes<br>Wilson MA and Makova KD.<br>PLoS Genet. 2009 Jul;5(7):e1000568. Epub 2009 Jul 17.<br><a href="http://www.bx.psu.edu/makova_lab/Doc/XAR_genes_alignmentFiles.zip">Unmasked FASTA files for XAR/YAR genes</a><br><br></p>
+
+          <p align="justify"><b>Sample Gene Reads</b><br><a href="http://www.bx.psu.edu/makova_lab/Doc/100_reads.fastq">Sample Gene Reads</a><br><br></p>
+
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+</div>
+
+<div class="col-md-1"></div>
+
+</body>
+
+
+</html>
