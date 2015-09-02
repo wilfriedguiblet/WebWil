@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+
+{% load pytags %}
+
+<html>
+<head lang="en">
+
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="http://bootswatch.com/readable/bootstrap.min.css">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="main.css">
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.js"></script>
+    <script type="text/javascript" src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="main.js"></script>
+
+    <meta charset="UTF-8">
+    <title>
+        Center for Medical Genomics
+    </title>
+</head>
+
+<body>
+<div class="col-md-12">
+
+<h1 align="center">Center for Medical Genomics</h1>
+<h4 align="center">Bringing together researchers in medicine, genomics, molecular biology and statistics to advance basic genomic research and translate that research into new diagnostic, therapeutic, and preventive medical strategies</h4>
+
+<!--
+<div class="row">
+<div class="col-md-12">
+  <br>
+  <div class="btn-group btn-group-justied" role="group" aria-label="...">
+    <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">About Us<span class="caret"></span></button>
+    <ul class="dropdown-menu">
+      <li><a href="#">Our Mission</a></li>
+      <li><a href="#">Impact on Medicine</a><li>
+    </ul>
+    <button type="button" class="btn btn-success">Labs</button>
+    <button type="button" class="btn btn-info">Publications</button>
+    <button type="button" class="btn btn-warning">Contact Us</button>
+  </div>
+</div>
+</div>
+
+-->
+
+<div class="col-md-3" >
+  <div class="panel">
+    <div class="panel-heading"><h4 align="center">Labs</h4></div>
+    <div class="panel-body" style="max-height: 1000px; overflow-y: scroll;">
+
+    <ul class="media-list">
+    {% for name, description, url, picture in context.labs %}
+      <li class="media">
+        <div class="media-left">
+          <a href="{{url}}">
+             <img class="media-object" src="img/{{picture}}" style="height:100px;width:100px;">
+          </a>
+        </div>
+        <div class="media-body">
+          <h4 class="media-heading"><strong>{{name}}</strong></h4>
+          <p align="justify">{{description}}</p>
+        </div>
+      </li>
+    {% endfor %}
+    </ul>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+<div class="col-md-5">
+  <div class="panel">
+    <div class="panel-heading"><h4 align="center">News</h4></div>
+    <div class="panel-body" style="max-height: 1000px; overflow-y: scroll;">
+
+      <div class="embed-responsive embed-responsive-16by9">
+        <iframe class="embed-responsive-item" src="https://www.youtube.com/watch?v=6MEsFJUMCnc"></iframe>
+      </div>
+
+
+    <tbody>
+      <tr class="clickable-row" data-href="{{url}}">
+      {% for news, description, url in context.news %}
+        <td>
+          <h4 align="justify">{{news}}</h4>
+          <p align="justify">{{description}}</p>
+        </td>
+      {% endfor %}
+      </tr>
+    </tbody>
+    
+    </div>
+  </div>
+
+</div>
+
+
+<div class="col-md-4">
+  <div class="panel">
+    <div class="panel-heading"><h4 align="center">Events</h4></div>
+    <div class="panel-body" style="max-height: 500px; overflow-y: scroll;">
+
+  <ul class="media-list">
+  {% for name, title, when, where, map, description in context.events %}
+    <li class="media">
+<!--      <div class="media-left">
+        <a href="{{map}}">
+          <big><i class="media-object; fa fa-map-marker"></i></big>
+        </a>
+      </div> -->
+      <div class="media-body">
+        <a href="#" data-toggle="modal" data-target="#{{name}}" title="Do you want to know more?">
+          <h4 align="justify">{{title}}</h4>
+        </a>
+        <p align="justify">{{name}}</p>
+        <p align="justify">{{when}}</p>
+        <a href="{{map}}"><p align="justify">{{where}}</p></a>
+      </div>
+    </li>
+  {% endfor %}
+  </ul>
+
+    </div>
+  </div>
+</div>
+
+
+
+<div class="col-md-4">
+  <div class="panel">
+    <div class="panel-heading"><h4 align="center">Publications</h4></div>
+    <div class="panel-body" style="max-height: 500px; overflow-y:scroll;">
+
+
+ 
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+
+</html>
