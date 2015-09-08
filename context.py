@@ -626,7 +626,7 @@ PEOPLE_FIELD_COUNT = 6
 PEOPLE = """
 
 Rebeca Campos-Sanchez
-PhD student, Program in Genetics
+PhD student, Intercollege Graduate Program in Genetics
 rxc327@psu.edu
 Genome Evolution, Cancer Genomics, Population Genetics
 rebeca.png
@@ -640,7 +640,7 @@ sarah.png
 O
 
 Di (Bruce) Chen
-Ph.D student, Program in Integrative Bioscience - Genetics
+Ph.D student, Intercollege Graduate Program in Genetics
 di.bruce.chen@gmail.com
 Born and raised up in Nanjing, China. Trained as a computational biologist and amateur violinist. Big fan of backpacking, sci-fi, and research. Current work leverages bioinformatics tools and statistics in comparative genomics, with special interest in the regional variation of mutation rate in human genome.
 bruce.png
@@ -726,7 +726,7 @@ S
 Rahulsimham Vegesna
 Ph.D student, Program in Integrative Bioscience - Bioinformatics and Genomics - Co-advised by Paul Medvedev
 rxv923@psu.edu
-?
+I am interested in understanding the mechanism that give rise to complex genomic structural variants in cancer. I am studying the role of different DNA polymerases in the formation of different structural variations.
 Rahul.png
 Ms
 
@@ -820,7 +820,7 @@ http://www.personal.psu.edu/mxd60/people.html
 
 Francisco J. Diaz
 Associate Professor of Reproductive Biology
-?
+francisco.png
 Mt
 http://animalscience.psu.edu/directory/fjd10
 
