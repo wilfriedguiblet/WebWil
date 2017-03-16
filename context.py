@@ -623,7 +623,7 @@ Rebeca Campos-Sanchez - Ph.D student, Intercollege Graduate Program in Genetics
 Benjamin Dickins - Postdoctoral Scholar 
 Prabhani Kuruppumullage Don - Ph.D. student - Statistics 
 Allison Fisher - Undergraduate student - Biology
-Arkarachai Fungtammasan - Ph.D student, Program in Integrative Bioscience - Bioinformatics and Genomics
+Arkarachai Fungtammasan - Ph.D student - Bioinformatics and Genomics
 Matthew Ghent - Undergraduate - Biochemistry 
 Aparna Goel - Undergraduate student 
 Paula Goetting - Senior research assistant 
@@ -637,7 +637,9 @@ Ali Martinson - Undergraduate student - Biology
 Matthew Nielsen - Undergraduate student - Biology 
 Chungoo Park - Ph.D. student - Biology 
 Lei Peng - Undergrad - Biology 
-Adil Sarwar - Ph.D. student - Computer Science 
+Boris Rebolledo-Jaramillo - Ph.D. student - Bioinformatics and Genomics
+Adil Sarwar - Ph.D. student - Computer Science
+Marcia Shu-Wei Su - Postdoctoral Scholar 
 Melissa A. Wilson Sayres - Ph.D. student - Integrative Biosciences 
 Bryant Schultz - Undergraduate student - Biology 
 Carolyn Rogers - Undergraduate Student - Program in Biology
@@ -664,6 +666,14 @@ PEOPLE_FIELD_COUNT = 7
 #URL to personal page
 
 PEOPLE = """
+
+Barbara Arbeithuber
+Postdoctoral Scholar
+bxa15@psu.edu
+I am interested in the accurate measurement of rare mutations. My current project focuses on the inheritance of mitochondrial DNA; particularly, I want analyze de novo mutations in the germ line, as well as the inheritance of low-level variants.
+dna.jpg
+Mt
+NA
 
 Sarah J. Carnahan Craig
 Postdoctoral Scholar
@@ -721,22 +731,6 @@ samarth.png
 S
 NA
 
-Boris Rebolledo-Jaramillo
-Ph.D student, Program in Integrative Bioscience - Bioinformatics and Genomics - Co-advised by Anton Nekrutenko
-ber5099@psu.edu
-I am from Chile, and I am a Fulbright Ph.D. student in the Bioinformatics and Genomics program.  I am currently a member of the mitochondrial team.  I develop computational pipelines for the understanding of mitochondrial DNA variation and evolution in natural populations.
-Boris.png
-Mt
-NA
-
-Marcia Shu-Wei Su
-Postdoctoral Scholar
-marcia@bx.psu.edu	Lab : (814) 863-2185
-My research focuses on molecular microbiology and genetics. I am currently investigating the variation of mitochondrial DNA (mtDNA) between humans using the Next Generation Sequencing and computational analyses. My goal is to discover how mtDNA mutations correlate with diseases to aid the development of personalized and preventative medicine.
-marcia.png
-Mt
-NA
-
 Nick Stoler
 Ph.D student, Program in Integrative Bioscience - Bioinformatics and Genomics - Co-advised by Anton Nekrutenko
 nicholas.stoler@gmail.com
@@ -767,6 +761,14 @@ rxv923@psu.edu
 I am interested in understanding the mechanism that give rise to complex genomic structural variants in cancer. I am studying the role of different DNA polymerases in the formation of different structural variations.
 rahul.png
 Ms
+NA
+
+Arslan Zaidi
+Postdoctoral Scholar
+saz5078@psu.edu
+I am interested in studying both the proximal (developmental) and ultimate (evolutionary) causes of human genetic variation. I am currently examining the transmission of mitochondrial heteroplasmies in families to understand the biological processes governing mitochondrial DNA inheritance in humans. When I’m not science-ing, I’m drawing or re-reading The Lord of the Rings. 
+lion.jpg
+Mt
 NA
 
 
