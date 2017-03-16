@@ -1,4 +1,4 @@
-
+# -*- coding: utf-8 -*-
 PUBS_FIELD_COUNT = 6 
 
 #Names
