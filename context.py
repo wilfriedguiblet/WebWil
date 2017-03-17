@@ -10,137 +10,123 @@ PUBS_FIELD_COUNT = 6
 
 PUBS = """
 
-Makova et al.
+Makova KD, Patton JC.
 Increased yield of tri- and tetranucleotide microsatellite markers from unenriched small-insert libraries
 BioTechniques
 1998
 http://www.ncbi.nlm.nih.gov/pubmed/9454948
-?
+Mc
 
-Makova et al.
+Makova KD, Patton JC, Krysanov EYu, Chesser RK, Baker RJ.
 Microsatellite markers in wood mouse and striped field mouse (genus Apodemus)
 Molecular Ecology
 1998
 http://onlinelibrary.wiley.com/doi/10.1111/j.1365-294X.1998.00315.x/abstract
-?
+Mc
 
-Baker et al.
+Baker RJ, Makova KD, Chesser RK.
 Microsatellites indicate high frequency of multiple paternity in Apodemus (Rodentia)
 Molecular Ecology
 1999
 http://onlinelibrary.wiley.com/doi/10.1046/j.1365-294X.1999.00541.x/abstract
-?
+Mc
 
-Nekrutenko et al.
+Nekrutenko A, Makova KD, Chesser RK, Baker RJ.
 Representational Difference Analysis to distinguish cryptic species
 Molecular Ecology
 1999
 http://onlinelibrary.wiley.com/doi/10.1046/j.1365-294X.1999.00682_1.x/abstract
-?
+Mc
 
-Nekrutenko et al.
+Nekrutenko A, Makova KD, Baker RJ.
 Isolation of binary species-specific PCR-based markers and their value for systematic applications
 Gene
 2000
 http://eurekamag.com/research/010/893/010893188.php
-?
+Mc
 
-Makova et al.
+Makova KD, Nekrutenko A, Baker RJ.
 Evolution of Microsatellite Alleles in Four species of mice (genus Apodemus)
 Journal of Molecular Evolution
 2000
 http://www.ncbi.nlm.nih.gov/pubmed/10948273
-?
+Mc
 
-Longmire et al.
+Longmire JL, Roach JL, Maltbie M, White PS, Tatum OL, Makova KD, Hahn DC.
 Tetranucleotide microsatellite markers for the brown-headed cowbird (Molothrus ater)
 Journal of Avian Biology
 2001
 http://onlinelibrary.wiley.com/doi/10.1034/j.1600-048X.2001.320111.x/abstract
-?
+Mc
 
-Li, Makova
-Molecular Clocks
-Encyclopedia of Genetics (Academic Press)
-2001
-https://www.google.com/
-?
-
-Liu, Makova et al.
+Liu JC, Makova KD, Adkins RM, Gibson S, Li WH.
 Periods of rapid evolution of growth hormone in primates and emergence of species specificity of growth hormone receptor
 Molecular Biology and Evolution
 2001
 http://mbe.oxfordjournals.org/content/18/6/945.long
-?
+R
 
-Makova et al.
+Makova KD, Ramsay M, Jenkins T, Li WH.
 Human DNA sequence variation in a 6.6-kilobase region containing the melanocortin 1 receptor promoter
 Genetics
 2001
 http://www.ncbi.nlm.nih.gov/pmc/articles/PMC1461732/
-?
+R
 
-Nekrutenko et al.
+Nekrutenko A, Makova KD, Li WH.
 The KA/KS ratio test for assessing the protein-coding potential of genomic regions: An empirical and simulation study
 Genome Research
 2002
 http://www.ncbi.nlm.nih.gov/pmc/articles/PMC155263/
-?
+R
 
-Makova, Li
+Makova KM, Li WH.
 Strong male-driven evolution of DNA sequences in humans and apes
 Nature
 2002
 http://www.nature.com/nature/journal/v416/n6881/full/416624a.html
-?
+S, R
 
-Mu et al.
+Mu J, Duan J, Makova KD, Joy DA, Huynh CQ, Branch OH, Li WH, Su XZ.
 Chromosome-wide SNPs reveal an ancient origin for Plasmodium falciparum
 Nature
 2002
 http://www.nature.com/nature/journal/v418/n6895/full/nature00836.html
-?
+R
 
-Li et al.
+Li WH, Yi S, Makova K.
 Male-driven evolution
 Current Opinions in Genetics and Development.
 2002
 http://www.sciencedirect.com/science/article/pii/S0959437X02003544
-?
+S, R
 
-Li, Makova
+Li WH, Makova KM.
 Domain duplication and gene elongation
 Encyclopedia of the Human Genome (Nature Publishing Group)
 2003
-http://onlinelibrary.wiley.com/doi/10.1038/npg.els.0005097/full
-?
+http://www.els.net/WileyCDA/ElsArticle/refId-a0005097.html
+R
 
-Li, Makova
-Molecular Clocks
-Encyclopedia of the Human Genome (Nature Publishing Group)
-2003
-http://www.wiley.com/WileyCDA/WileyTitle/productCd-0470517468.html
-?
-
-John et al.
+John PR, Makova K, Li WH, Jenkins T, Ramsay M.
 DNA polymorphism and selection at the melanocortin-1 receptor gene in normally pigmented southern African individuals
 Ann N Y Acad Sci
 2003
 http://onlinelibrary.wiley.com/doi/10.1111/j.1749-6632.2003.tb03193.x/abstract
-?
+R
 
-Makova, Li
+Makova KD, Li WH.
 Divergence in the spatial pattern of gene expression between human duplicate genes
 Genome Research
 2003
 http://genome.cshlp.org/content/13/7/1638.full
-?
+R
 
 International Chicken Genome Sequencing Consortium (K. D. Makova - member)
 Sequence and comparitive analysis of the chicken genome provide unique perspectives on vertebrate evolution
 Nature
 2004
-http://dx.doi.org/10.1038/nature03154
+http://www.nature.com/nature/journal/v432/n7018/full/nature03154.html
 R, S
 
 Rat Genome Sequencing Project Consortium (K. D. Makova - member)
@@ -150,63 +136,63 @@ Nature
 http://www.nature.com/nature/journal/v428/n6982/abs/nature02426.html
 R, S
 
-Miller et al.
+Miller W, Makova KM, Nekrutenko A, Hardison RC.
 Comparitive Genomics
 Annual Review of Genomics and Human Genetics
 2004
 http://www.annualreviews.org/doi/full/10.1146/annurev.genom.5.061903.180057?url_ver=Z39.88-2003&rfr_id=ori:rid:crossref.org&rfr_dat=cr_pub%3dpubmed&
 ?
 
-Makova et al.
+Makova KD, Yang S, Chiaromonte F.
 Indels are male-biased too: a whole genome analysis in rodents
 Genome Research
 2004
 http://genome.cshlp.org/cgi/pmidlookup?view=long&pmid=15059997
 R
 
-Nekrutenko et al.
+Nekrutenko A, Wadhawan S, Goetting-Minesky P, Makova KD.
 Oscillating Evolution of a Mammalian Locus with Overlapping Reading Frames: An XLas/ALEX Relay
 PloS Genetics
 2005
-http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.281.7514
-?
+http://journals.plos.org/plosgenetics/article?id=10.1371/journal.pgen.0010018
+R
 
 The Chimpanzee Sequencing and Analysis Consortium (K. D. Makova - member)
 Initial sequence of the chimpanzee genome and comparison with the human genome
 Nature
 2005
 http://www.nature.com/nature/journal/v437/n7055/full/nature04072.html
-?
+R
 
-Makova, Norton
+Makova K, Norton H.
 Worldwide polymorphism at the MC1R locus and normal pigmentation variation in humans
 Peptides
 2005
 http://www.sciencedirect.com/science/article/pii/S0196978105002779
-?
+R
 
-Taylor et al.
+Taylor J, Tyekucheva S, Zody M, Chiaromonte F, Makova KD.
 Strong and Weak Male Mutation Bias at Different Sites in the Primate Genomes: Insights from the Human-Chimpanzee Comparison
 Molecular Biology and Evolution
 2006
 http://mbe.oxfordjournals.org/content/23/3/565.full.pdf
-R
+R, S
 
-Chung et al.
+Chung WY, Albert R, Albert I, Nekrutenko A, Makova KD.
 Rapid and asymmetric divergence of duplicate genes in the human gene coexpression network
 BMC Bioinformatics
 2006
 http://www.biomedcentral.com/1471-2105/7/46
-?
+R
 
-Goetting-Minesky, Makova
+Goetting-Minesky MP, Makova KD.
 Mammalian Male Mutation Bias: Impacts of Generation Time and Regional Variation in Substitution Rates
 Journal of Molecular Evolution
 2006
 http://link.springer.com/article/10.1007%2Fs00239-005-0308-8
 S, R
 
-Carrel et al.
+Carrel L, Park C, Tyekucheva S, Dunn J, Chiaromonte F, Makova KD.
 Genomic environment predicts expression patterns on the human inactive X chromosome
 PLoS Genet
 2006
@@ -220,334 +206,349 @@ Science
 http://www.sciencemag.org/content/316/5822/222
 S
 
-Blankenberg et al.
+Blankenberg D, Taylor J, Schenck I, He J, Zhang Y, Ghent M, Veeraraghavan N, Albert I, Miller W, Makova KD, Hardison RC, Nekrutenko A.
 A framework for collaborative analysis of ENCODE data: Making large-scale analyses biologist-friendly
 Genome Research
 2007
 http://genome.cshlp.org/content/17/6/960.long
 ?
 
-Kvikstad et al.
+Kvikstad EM, Tyekucheva S, Chiaromonte F, Makova KD.
 A macaque's-eye view of human insertions and deletions: differences in mechanisms
 PLoS Computational Biology
 2007
 http://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.0030176
 R
 
-Kelkar et al.
-The genome-wide determinants of microsatellite evolution
+Li WH, Makova KD
+Molecular Clocks
+Encyclopedia of Genetics (Academic Press)
+2008
+http://www.els.net/WileyCDA/ElsArticle/refId-a0005111.html
+R
+
+Kelkar YD, Tyekucheva S, Chiaromonte F, Makova KD.
+The genome-wide determinants of human and chimpanzee microsatellite evolution
 Genome Research
 2008
 http://genome.cshlp.org/content/18/1/30.long
 Mc
 
-Kvikstad et al.
-Rapid Evolution of Genes on the Human X-chromosome. Encyclopedia of Life Sciences (ELS)
-John Wiley & Sons
-2008
-http://onlinelibrary.wiley.com/doi/10.1002/9780470015902.a0020858.pub2/abstract
-S
-
-Tyekucheva et al.
+Tyekucheva S, Makova KD, Karro JE, Hardison RC, Miller W, Chiaromonte F.
 Human-macaque comparisons illuminate variation in neutral substitution rates
 Genome Biology
 2008
 http://www.genomebiology.com/2008/9/4/R76
 R
 
-Allison et al.
+Lau AN, Peng L, Goto H, Chemnick L, Ryder OA, Makova KD.
 Horse Domestication and Conservation Genetics of Przewalski's Horse Inferred from Sex Chromosomal and Autosomal Sequences
 Molecular Biology and Evolution
 2009
 http://mbe.oxfordjournals.org/content/26/1/199.abstract
-?
+S
 
-Goto et al.
+Goto H, Peng L, Makova KD.
 Evolution of X-degenerate Y chromosome genes in greater apes: Conservation of gene content in human and gorilla, but not chimpanzee
 Journal of Molecular Evolution
 2009
 http://link.springer.com/article/10.1007%2Fs00239-008-9189-y
 S
 
-Park, Makova
-oding region structural heterogeneity and turnover of transcription start sites contribute to divergence in expression between duplicate genes
+Park C, Makova KD.
+Coding region structural heterogeneity and turnover of transcription start sites contribute to divergence in expression between duplicate genes
 Genome Biology 
 2009
 http://www.ncbi.nlm.nih.gov/pmc/articles/PMC2687787/
-?
+R
 
-Kvikstad et al.
+Kvikstad EM, Chiaromonte F, Makova KM.
 Ride the wavelet: a multi-scale analysis of genomic contexts flanking small insertions and deletions
 Genome Research
 2009
 http://genome.cshlp.org/cgi/pmidlookup?view=long&pmid=19502380
 R
 
-Wilson, Makova
+Wilson MA, Makova KD.
 Genomic analyses of sex chromosome evolution
 Annual Reviews of Human Genetics and Genomics
 2009
 http://www.annualreviews.org/doi/full/10.1146/annurev-genom-082908-150105?url_ver=Z39.88-2003&rfr_id=ori:rid:crossref.org&rfr_dat=cr_pub%3dpubmed
 S
 
-Wilson, Makova
+Wilson MA, Makova KD.
 Evolution and survival on eutherian sex chromosomes
 PLoS Genetics
 2009
 http://journals.plos.org/plosgenetics/article?id=10.1371/journal.pgen.1000568
 S
 
-Schuster et al.
+Schuster SC, Miller W, Ratan A, Tomsho LP, Giardine B, Kasson LR, Harris RS, Petersen DC, Zhao F, Qi J, Alkan C, Kidd JM, Sun Y, Drautz DI, Bouffard P, Muzny DM, Reid JG, Nazareth LV, Wang Q, Burhans R, Riemer C, Wittekindt NE, Moorjani P, Tindall EA, Danko CG, Teo WS, Buboltz AM, Zhang Z, Ma Q, Oosthuysen A, Steenkamp AW, Oostuisen H, Venter P, Gajewski J, Zhang Y, Pugh BF, Makova KD, Nekrutenko A, Mardis ER, Patterson N, Pringle TH, Chiaromonte F, Mullikin JC, Eichler EE, Hardison RC, Gibbs RA, Harkins TT, Hayes VM.
 Complete Khoisan and Bantu genomes from southern Africa
 Nature
 2010
 http://www.nature.com/nature/journal/v463/n7283/full/nature08795.html
 ?
 
-Kvikstad, Makova
+Kvikstad EM, Makova KD.
 The (r)evolution of LINE and SINE distribution in the primate genomes: Sex chromosomes are important
 Genome Research
 2010
 http://genome.cshlp.org/cgi/pmidlookup?view=long&pmid=20219940
 R
 
-Park et al.
+Park C, Carrel L, Makova KD.
 Strong Purifying Selection at Genes Escaping X Chromosome Inactivation
 Molecular Biology and Evolution
 2010
 http://www.ncbi.nlm.nih.gov/pmc/articles/PMC2981488/
 S
 
-Kelkar et al.
+Kelkar YD, Strubczewski N, Hile SE, Chiaromonte F, Eckert KA, Makova KD.
 What Is a Microsatellite: A Computational and Experimental Definition Based upon Repeat Mutational Behavior at A/T and GT/AC Repeats
 Genome Biol. Evol.
 2010
 http://gbe.oxfordjournals.org/cgi/pmidlookup?view=long&pmid=20668018
 Mc
 
-Ananda et al.
+Ananda G, Chiaromonte F, Makova KD.
 A genome-wide view of mutation rate co-variation using multivariate analyses
 Genome Biology
 2011
 http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3129677/
 R
 
-Wilson et al.
+Wilson Sayres MA, Venditti C, Pagel M, Makova KD.
 Do variations in substitution rates and male mutation bias correlate with life history traits? A study of 32 mammalian genomes
 Evolution
 2011
 http://onlinelibrary.wiley.com/doi/10.1111/j.1558-5646.2011.01337.x/abstract
 R, S
 
-Goto et al.
+Goto H, Dickins B, Afgan E, Paul IM, Taylor J, Makova KD, Nekrutenko A.
 Dynamics of mitochondrial heteroplasmy in three families investigated via a repeatable re-sequencing study
 Genome Biology
 2011
 http://www.genomebiology.com/2011/12/6/r59
 Mt
 
-Lombard et al.
+Lombard Z, Park C, Makova KD, Ramsay M.
 A Computational Approach to Candidate Gene Prioritization for X-Linked Mental Retardation using Annotation-based Binary Filtering and Motif-Based Linear Discriminatory Analysis
 Biology Direct
 2011
 http://www.biologydirect.com/content/6/1/30
 S
 
-Goto et al.
+Goto H, Ryder OA, Fisher AR, Schultz B, Kosakovsky Pond SL, Nekrutenko A, Makova KD.
 A massively parallel sequencing approach uncovers ancient origins and high genetic variability of endangered Przewalski s horses
 Genome Biology and Evolution
 2011
 http://gbe.oxfordjournals.org/cgi/pmidlookup?view=long&pmid=21803766
 Mt
 
-Afgan et al.
+Afgan E, Baker D, Coraor N, Goto H, Paul IM, Makova KD, Nekrutenko A, Taylor J.
 Harnessing cloud-computing for biomedical research with Galaxy Cloud
 Nature Biotechnology
 2011
 http://www.nature.com/nbt/journal/v29/n11/abs/nbt.2028.html
 Mt
 
-Kelkar et al.
+Kelkar YD, Eckert KA, Chiaromonte F, Makova KD.
 A matter of life or death: How microsatellites emerge in and vanish from the human genome
 Genome Research
 2011
 http://genome.cshlp.org/cgi/pmidlookup?view=long&pmid=21994250
 Mc
 
-Wilson Sayres, Makova
+Wilson Sayres MA, Makova KD.
 Genome analyses substantiate male mutation bias in many species
 Bioessays
 2011
 http://onlinelibrary.wiley.com/doi/10.1002/bies.201100091/abstract
 S
 
-Wolfe et al.
+Wolfe K, Wayne ML, Makova K, Steen TY, Uyenoyama M, Takahata N.
 SMBE Proposal to the Government of Japan
 Molecular Biology and Evolution
 2012
 http://mbe.oxfordjournals.org/content/29/1/441.full
 ?
 
-Fungtammasan et al.
+Fungtammasan A, Walsh E, Chiaromonte F, Eckert KA, Makova KD.
 A Genome-wide Analysis of Common Fragile Sites: What Features Determine Chromosomal Instability in the Human Genome?
 Genome Research
 2012
 http://genome.cshlp.org/cgi/pmidlookup?view=long&pmid=22456607
 Mc, R
 
-Wagstaff et al.
+Wagstaff BJ, Hedges DJ, Derbes RS, Campos Sanchez R, Chiaromonte F, Makova KD, Roy-Engel AM.
 Rescuing Alu: recovery of new inserts shows LINE-1 preserves Alu activity through A-tail expansion
 PLoS Genetics
 2012
 http://journals.plos.org/plosgenetics/article?id=10.1371/journal.pgen.1002842
 R
 
-Wilson Sayres, Makova
+Wilson Sayres MA, Makova KD.
 Gene survival and death on the human Y chromosome
 Molecular Biology and Evolution 
 2013
 http://mbe.oxfordjournals.org/cgi/pmidlookup?view=long&pmid=23223713
 S
 
-Ananda et al.
+Ananda G, Walsh E, Jacob KD, Krasilnikova M, Eckert KA, Chiaromonte F, Makova KD.
 Distinct mutational behaviors distinguish short tandem repeats from microsatellites in the human genome
 Genome Biology and Evolution
 2013
 http://gbe.oxfordjournals.org/content/5/3/606/suppl/DC1
 Mc
 
-Baptiste et al.
+Baptiste BA, Ananda G, Strubczewski N, Lutzkanin A, Khoo SJ, Srikanth A, Kim N, Makova KD, Krasilnikova MM, Eckert KA.
 Mature Microsatellites: Mechanisms Underlying Dinucleotide Microsatellite Mutational Biases in Human Cells
 Genes, Genomes, and Genetics
 2013
 http://www.g3journal.org/cgi/pmidlookup?view=long&pmid=23450065
 Mc
 
-Montgomery et al.
+Montgomery SB, Goode DL, Kvikstad E, Albers CA, Zhang ZD, Mu XJ, Ananda G, Howie B, Karczewski KJ, Smith KS, Anaya V, Richardson R, Davis J; 1000 Genomes Project Consortium, MacArthur DG, Sidow A, Duret L, Gerstein M, Makova KD, Marchini J, McVean G, Lunter G.
 The origin, evolution, and functional impact of short insertion-deletion variants identified in 179 human genomes
 Genome Research
 2013
 http://genome.cshlp.org/content/early/2013/03/11/gr.148718.112.abstract
 Mc
 
-Steiner et al.
+Steiner CC, Makova KD, Ryder OA.
 Mitochondrial Genome: Clues about the Evolution of Extant Equids and Genomic Diversity of Horse Breeds, in Equine Genomics
 (ed B. P. Chowdhary), Blackwell Publishing Ltd., Oxford, UK
 2013
 http://onlinelibrary.wiley.com/doi/10.1002/9781118522158.ch19/summary
 Mt
 
-Kuruppumullage Don, Ananda et al.
+Kuruppumullage Don P, Ananda G, Chiaromonte F, Makova KD.
 Segmenting the human genome based on states of neutral genetic divergence
 Proceedings of the National Academy of Sciences
 2013
 http://www.pnas.org/content/110/36/14699.long
 R
 
-Dickins, Rebolledo-Jaramillo et al.
+Dickins B, Rebolledo-Jaramillo B, Su MS3, Paul IM, Blankenberg D, Stoler N, Makova KD, Nekrutenko A.
 Controlling for contamination in re-sequencing studies with a reproducible web-based phylogenetic approach
 BioTechniques
 2014
 http://www.biotechniques.com/BiotechniquesJournal/2014/March/Controlling-for-contamination-in-re-sequencing-studies-with-a-reproducible-web-based-phylogenetic-approach/biotechniques-350711.html
 Mt
 
-Campos-Sanchez, Kapusta et al.
+Kvikstad EM, Makova KD.
+Rapid Evolution of Genes on the Human X-chromosome. 
+Encyclopedia of Life Sciences (ELS)
+2013
+http://onlinelibrary.wiley.com/doi/10.1002/9780470015902.a0020858.pub2/abstract
+S
+
+Campos-Sánchez R, Kapusta A, Feschotte C, Chiaromonte F, Makova KD.
 Genomic Landscape of Human, Bat, and Ex Vivo DNA Transposon Integrations
 Molecular Biology and Evolution
 2014
 http://mbe.oxfordjournals.org/content/early/2014/04/22/molbev.msu138
 R
 
-McElhoe et al.
+McElhoe JA, Holland MM, Makova KD, Su MS, Paul IM, Baker CH, Faith SA, Young B.
 Development and assessment of an optimized next-generation DNA sequencing approach for the mtgenome using the Illumina MiSeq
 Forensic Science International: Genetics
 2014
 http://www.sciencedirect.com/science/article/pii/S1872497314000994
 Mt
 
-Ananda et al.
+Ananda G, Hile SE, Breski A, Wang Y, Kelkar Y, Makova KD, Eckert KA.
 Microsatellite Interruptions Stabilize Primate Genomes and Exist as Population-Specific Single Nucleotide Polymorphisms within Individual Human Genomes
 PLoS Genet.
 2014
 http://journals.plos.org/plosgenetics/article?id=10.1371/journal.pgen.1004498
 Mc
 
-Paul et al.
+Paul IM, Williams JS, Anzman-Frasca S, Beiler JS, Makova KD, Marini ME, Hess LB, Rzucidlo SE, Verdiglione N, Mindell JA, Birch LL.
 The Intervention Nurses Start Infants Growing on Healthy Trajectories (INSIGHT) study
 BMC pediatrics
 2014
 http://www.biomedcentral.com/1471-2431/14/184
 O
 
-Rebolledo-Jaramillo, Su et al.
+Rebolledo-Jaramillo B, Su MS, Stoler N, McElhoe JA, Dickins B, Blankenberg D, Korneliussen TS, Chiaromonte F, Nielsen R, Holland MM, Paul IM, Nekrutenko A, Makova KD.
 Maternal Age Effect and Severe Germline Bottleneck in the Inheritance of Human Mitochondrial DNA
 PNAS
 2014
 http://www.pnas.org/content/111/43/15474.full
 Mt
 
-Chiaromonte, Makova
+Chiaromonte F, Makova KD.
 Using Statistics to Shed Light on the Dynamics of the Human Genome: A Review. Advances in Complex Data Modeling and Computational Methods in Statistics
 Contributions to Statistics
 2014
 http://link.springer.com/chapter/10.1007%2F978-3-319-11149-0_5
 R
 
-Makova, Hardison
+Makova KD, Hardison RC.
 The effects of chromatin organization on variation in mutation rates in the genome
 Nature Reviews Genetics
 2015
 http://www.nature.com/nrg/journal/v16/n4/full/nrg3890.html
 R
 
-Fungtammasan, Ananda et al.
+Fungtammasan A, Ananda G, Hile SE, Su MS, Sun C, Harris R, Medvedev P, Eckert K, Makova KD.
 Accurate Typing of Short Tandem Repeats from Genome-wide Sequencing Data and its Applications
 Genome Research
 2015
 http://genome.cshlp.org/content/early/2015/03/30/gr.185892.114
 Mc
 
-Tomaszkiewicz, Rangavittal, Cechova et al.
+Tomaszkiewicz M, Rangavittal S, Cechova M, Campos Sanchez R, Fescemyer HW, Harris R, Ye D, O'Brien PC, Chikhi R, Ryder OA, Ferguson-Smith MA, Medvedev P, Makova KD.
 A Time- and Cost-Effective Strategy to Sequence Mammalian Y Chromosomes: An Application to the de novo Assembly of Gorilla Y
 Genome Research
 2016
 http://genome.cshlp.org/content/early/2016/02/26/gr.199448.115.abstract
 S
 
-Campos-Sanchez, Cremona et al.
+Campos-Sánchez R, Cremona MA, Pini A, Chiaromonte, Makova KD.
 Integration and Fixation Preferences of Human and Mouse Endogenous Retroviruses Uncovered with Functional Data Analysis
 PLOS Computational Biology
 2016
 http://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1004956
 R
 
-Fungtammasan et al.
+Fungtammasan A, Tomaszkiewicz M, Campos-Sánchez R, Eckert KA, DeGiorgio M, Makova KD.
 Reverse Transcription Errors and RNA-DNA Differences at Short Tandem Repeats
 Molecular Biology and Evolution
 2016
 http://mbe.oxfordjournals.org/content/early/2016/07/11/molbev.msw139.abstract?keytype=ref&ijkey=vL8Oo9g8zVeNL8F
 Mc
 
-Barbara Arbeithuber, Kateryna D. Makova, and Irene Tiemann-Boege
+Arbeithuber B, Makova KD, Tiemann-Boege I.
 Artifactual mutations resulting from DNA lesions limit detection levels in ultrasensitive sequencing applications
 DNA research
 2016
 http://dnaresearch.oxfordjournals.org/content/early/2016/07/27/dnares.dsw038.full.pdf?keytype=ref&ijkey=wzzYwZjQ8tWQAiV
 Mt
 
-Nicholas Stoler, Barbara Arbeithuber et al.
+Stoler N, Arbeithuber B, Guiblet W, Makova KD, Nekrutenko A.
 Streamlined analysis of duplex sequencing data with Du Novo
 Genome Biology
 2016
 http://genomebiology.biomedcentral.com/articles/10.1186/s13059-016-1039-4
 Mt
 
-Marta Tomaszkiewicz, Paul Medvedev and Kateryna Makova
+Tomaszkiewicz M, Medvedev P, Makova KD.
 Y and W Chromosome Assemblies: Approaches and Discoveries
 Trends in Genetics
 2017
-#
+http://www.sciencedirect.com/science/article/pii/S0168952517300197
 S
+
+Baker RJ, Dickins B, Wickliffe JK, Khan FA, Gaschak S, Makova K, Phillips CD. 
+Elevated mitochondrial genome variation after 50 generations of radiation exposure in a wild rodent
+Evolutionary Applications
+2017
+http://onlinelibrary.wiley.com/doi/10.1111/eva.12475/abstract
+Mt
+
 """
 
 def publications():
