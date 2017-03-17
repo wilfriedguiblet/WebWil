@@ -672,7 +672,7 @@ Barbara Arbeithuber
 Postdoctoral Scholar
 bxa15@psu.edu
 I am interested in the accurate measurement of rare mutations. My current project focuses on the inheritance of mitochondrial DNA; particularly, I want analyze de novo mutations in the germ line, as well as the inheritance of low-level variants.
-dna.jpg
+Barbara.png
 Mt
 NA
 
@@ -768,7 +768,7 @@ Arslan Zaidi
 Postdoctoral Scholar
 saz5078@psu.edu
 I am interested in studying both the proximal (developmental) and ultimate (evolutionary) causes of human genetic variation. I am currently examining the transmission of mitochondrial heteroplasmies in families to understand the biological processes governing mitochondrial DNA inheritance in humans. When I’m not science-ing, I’m drawing or re-reading The Lord of the Rings. 
-lion.jpg
+Arslan.png
 Mt
 NA
 
