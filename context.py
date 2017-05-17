@@ -601,6 +601,12 @@ thumbs-up
 Congratulations to Sarah Craig and Marta Tomaszkiewicz for winning the 1st and 2nd poster awards at the Center for Medical Genomics Retreat!
 thumbs-up
 
+February 21, 2017 : Marta Tomaszkiewicz reviews W and Y chromosome assemblies in the April 2017 issue of Trends in Genetics.
+file
+
+April 27, 2017 : Congratulations to Danling for being the recipient of the 2017 Douglas and Regina Award for Research Achievement for her work in the lab on ampliconic gene copy numbers in the human Y chromosome!
+thumbs-up
+
 """
 
 def news():

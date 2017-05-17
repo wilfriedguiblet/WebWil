@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-{% load pytags %}
+
 
 <html>
 <head lang="en">
@@ -45,71 +45,117 @@
 
 
       <div class="row" >
-      {% for title, img, short, long, badge, color in context.research %}
+      
         <div class="col-xs-12 col-md-12" style="padding:0px;">
-            <div class="panel panel-{{color}}">
+            <div class="panel panel-primary">
             <div class="panel-heading">
               <h2 class="panel-title">
-                <b>{{title}}</b>
-                <span class="badge pull-right">{{badge}}</span>
-               <button class="btn btn-{{color}} btn-xs pull-right" data-toggle="modal" data-target="#{{badge}}" title="Do you want to know more?" style="margin-right:3px;"><b>Read More</b></button>
+                <b>Regional variation in mutation rates</b>
+                <span class="badge pull-right">R</span>
+               <button class="btn btn-primary btn-xs pull-right" data-toggle="modal" data-target="#R" title="Do you want to know more?" style="margin-right:3px;"><b>Read More</b></button>
 
               </h2>
             </div>
             <div class="panel-body">
-              <p align="justify">{{short}}</p>
+              <p align="justify">Mutation rates vary at a fine scale - even within individual chromosomes. We are using statistical modeling to study such regional variation in mutation rates. Moreover, we are able to segment the genome into regions with high and low rates of different mutation types.</p>
             </div>
 
             <!-- Modal -->
-            <div class="modal fade" id="{{badge}}"  tabindex="-1" role="dialog" aria-labelledby="{{badge}}Label">
+            <div class="modal fade" id="R"  tabindex="-1" role="dialog" aria-labelledby="RLabel">
               <div class="modal-dialog" role="document">
                 <div class="modal-content">
                   <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                    <h4 class="modal-title" id="{{badge}}Label">{{title}}</h4>
+                    <h4 class="modal-title" id="RLabel">Regional variation in mutation rates</h4>
                   </div>
                   <div class="modal-body">
-                  <p align="justify">{{long}}</p>
+                  <p align="justify">Mutation rates vary at a fine scale - even within individual chromosomes. We are using statistical modeling to study such regional variation in mutation rates. Our analysis of insertions vs. deletions revealed that they are formed, at least in part, by different molecular mechanisms and that, in addition to replication, recombination plays an important role in indel formation (Kvikstad et al. 2007). Employing wavelet transformation techniques, we demonstrated the importance of genomic scale for regional variation in mutation rates (Kvikstad et al. 2009). Using specialized statistical approaches, we have investigated the structure of rate co-variation for four mutation types (point mutations, insertions, deletions, and microsatellite mutations) and simultaneously exploring the associations with multiple genomic features (Ananda et al. 2011). Moreover, we were able to segment the genome into regions with high and low rates of different mutations (Kurupummulage Don, Ananda, et al. 2013). Collaborator: Francesca Chiaromonte.</p>
                   </div>
 
                   <div class="col-md-12">
                   <ul class="media-list">
-                  {% for name, job, contact, interest, picture, BADGE in context.people %}
-                  {% if badge in BADGE %}
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
                     <li class="media">
                       <div class="media-left">
                         <a href="#">
-                          <img class="media-object" src="img/{{picture}}" alt="img/{{picture}}" style="height:150px; width:150px;">
+                          <img class="media-object" src="img/bruce.png" alt="img/bruce.png" style="height:150px; width:150px;">
                         </a>
                       </div>
                       <div class="media-body">
-                        <h4 class="media-heading"><strong>{{name}}</strong></h4>
-                        <p align="justify">{{job}}<br>{{contact}}</p>
+                        <h4 class="media-heading"><strong>Di (Bruce) Chen</strong></h4>
+                        <p align="justify">Ph.D student, Intercollege Graduate Program in Genetics<br>di.bruce.chen@gmail.com</p>
                       </div>
                     </li>
-                  {% endif %}
-                  {% endfor %}
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
                   </ul>
                   </div>
 
 
                   <div class="col-md-12">
                   <ul class="media-list">
-                  {% for name, job, picture, BADGE, url in context.collaborators %}
-                  {% if badge in BADGE %}
+                  
+                  
+                  
+                  
                     <li class="media">
                       <div class="media-left">
                         <a href="#">
-                          <img class="media-object" src="img/{{picture}}" alt="img/{{picture}}" style="height:150px; width:150px;">
+                          <img class="media-object" src="img/francesca.png" alt="img/francesca.png" style="height:150px; width:150px;">
                         </a>
                       </div>
                       <div class="media-body">
-                        <h4 class="media-heading"><strong>{{name}}</strong></h4>
-                        <p align="justify"><a href="{{url}}">{{job}}</a></p>
+                        <h4 class="media-heading"><strong>Francesca Chiaromonte</strong></h4>
+                        <p align="justify"><a href="https://sites.psu.edu/chiaromonte/">Department of Statistics - Pennsylvania State University</a></p>
                       </div>
                     </li>
-                  {% endif %}
-                  {% endfor %}
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
                   </ul>
                   </div>
 
@@ -121,16 +167,392 @@
                         <th><span class="glyphicon glyphicon-file"></span></th>
                         <th><span class="glyphicon glyphicon-book"></span></th>
                       </tr>
-                      {% for author, title, journal, year, url, BADGE in context.publications %}
-                      {% if badge in BADGE %}
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
                       <tr>
-                        <td>{{year}}</td>
-                        <td>{{author}}</td>
-                        <td><a href="{{url}}">{{title}}</a></td>
-                        <td><em>{{journal}}</em></td>
+                        <td>2016</td>
+                        <td>Campos-Sánchez R, Cremona MA, Pini A, Chiaromonte, Makova KD.</td>
+                        <td><a href="http://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1004956">Integration and Fixation Preferences of Human and Mouse Endogenous Retroviruses Uncovered with Functional Data Analysis</a></td>
+                        <td><em>PLOS Computational Biology</em></td>
                       </tr>
-                      {% endif %}
-                      {% endfor %}
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      <tr>
+                        <td>2015</td>
+                        <td>Makova KD, Hardison RC.</td>
+                        <td><a href="http://www.nature.com/nrg/journal/v16/n4/full/nrg3890.html">The effects of chromatin organization on variation in mutation rates in the genome</a></td>
+                        <td><em>Nature Reviews Genetics</em></td>
+                      </tr>
+                      
+                      
+                      
+                      <tr>
+                        <td>2014</td>
+                        <td>Chiaromonte F, Makova KD.</td>
+                        <td><a href="http://link.springer.com/chapter/10.1007%2F978-3-319-11149-0_5">Using Statistics to Shed Light on the Dynamics of the Human Genome: A Review. Advances in Complex Data Modeling and Computational Methods in Statistics</a></td>
+                        <td><em>Contributions to Statistics</em></td>
+                      </tr>
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      <tr>
+                        <td>2014</td>
+                        <td>Campos-Sánchez R, Kapusta A, Feschotte C, Chiaromonte F, Makova KD.</td>
+                        <td><a href="http://mbe.oxfordjournals.org/content/early/2014/04/22/molbev.msu138">Genomic Landscape of Human, Bat, and Ex Vivo DNA Transposon Integrations</a></td>
+                        <td><em>Molecular Biology and Evolution</em></td>
+                      </tr>
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      <tr>
+                        <td>2013</td>
+                        <td>Kuruppumullage Don P, Ananda G, Chiaromonte F, Makova KD.</td>
+                        <td><a href="http://www.pnas.org/content/110/36/14699.long">Segmenting the human genome based on states of neutral genetic divergence</a></td>
+                        <td><em>Proceedings of the National Academy of Sciences</em></td>
+                      </tr>
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      <tr>
+                        <td>2012</td>
+                        <td>Wagstaff BJ, Hedges DJ, Derbes RS, Campos Sanchez R, Chiaromonte F, Makova KD, Roy-Engel AM.</td>
+                        <td><a href="http://journals.plos.org/plosgenetics/article?id=10.1371/journal.pgen.1002842">Rescuing Alu: recovery of new inserts shows LINE-1 preserves Alu activity through A-tail expansion</a></td>
+                        <td><em>PLoS Genetics</em></td>
+                      </tr>
+                      
+                      
+                      
+                      <tr>
+                        <td>2012</td>
+                        <td>Fungtammasan A, Walsh E, Chiaromonte F, Eckert KA, Makova KD.</td>
+                        <td><a href="http://genome.cshlp.org/cgi/pmidlookup?view=long&amp;pmid=22456607">A Genome-wide Analysis of Common Fragile Sites: What Features Determine Chromosomal Instability in the Human Genome?</a></td>
+                        <td><em>Genome Research</em></td>
+                      </tr>
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      <tr>
+                        <td>2011</td>
+                        <td>Wilson Sayres MA, Venditti C, Pagel M, Makova KD.</td>
+                        <td><a href="http://onlinelibrary.wiley.com/doi/10.1111/j.1558-5646.2011.01337.x/abstract">Do variations in substitution rates and male mutation bias correlate with life history traits? A study of 32 mammalian genomes</a></td>
+                        <td><em>Evolution</em></td>
+                      </tr>
+                      
+                      
+                      
+                      <tr>
+                        <td>2011</td>
+                        <td>Ananda G, Chiaromonte F, Makova KD.</td>
+                        <td><a href="http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3129677/">A genome-wide view of mutation rate co-variation using multivariate analyses</a></td>
+                        <td><em>Genome Biology</em></td>
+                      </tr>
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      <tr>
+                        <td>2010</td>
+                        <td>Kvikstad EM, Makova KD.</td>
+                        <td><a href="http://genome.cshlp.org/cgi/pmidlookup?view=long&amp;pmid=20219940">The (r)evolution of LINE and SINE distribution in the primate genomes: Sex chromosomes are important</a></td>
+                        <td><em>Genome Research</em></td>
+                      </tr>
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      <tr>
+                        <td>2009</td>
+                        <td>Kvikstad EM, Chiaromonte F, Makova KM.</td>
+                        <td><a href="http://genome.cshlp.org/cgi/pmidlookup?view=long&amp;pmid=19502380">Ride the wavelet: a multi-scale analysis of genomic contexts flanking small insertions and deletions</a></td>
+                        <td><em>Genome Research</em></td>
+                      </tr>
+                      
+                      
+                      
+                      <tr>
+                        <td>2009</td>
+                        <td>Park C, Makova KD.</td>
+                        <td><a href="http://www.ncbi.nlm.nih.gov/pmc/articles/PMC2687787/">Coding region structural heterogeneity and turnover of transcription start sites contribute to divergence in expression between duplicate genes</a></td>
+                        <td><em>Genome Biology</em></td>
+                      </tr>
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      <tr>
+                        <td>2008</td>
+                        <td>Tyekucheva S, Makova KD, Karro JE, Hardison RC, Miller W, Chiaromonte F.</td>
+                        <td><a href="http://www.genomebiology.com/2008/9/4/R76">Human-macaque comparisons illuminate variation in neutral substitution rates</a></td>
+                        <td><em>Genome Biology</em></td>
+                      </tr>
+                      
+                      
+                      
+                      
+                      
+                      <tr>
+                        <td>2008</td>
+                        <td>Li WH, Makova KD</td>
+                        <td><a href="http://www.els.net/WileyCDA/ElsArticle/refId-a0005111.html">Molecular Clocks</a></td>
+                        <td><em>Encyclopedia of Genetics (Academic Press)</em></td>
+                      </tr>
+                      
+                      
+                      
+                      <tr>
+                        <td>2007</td>
+                        <td>Kvikstad EM, Tyekucheva S, Chiaromonte F, Makova KD.</td>
+                        <td><a href="http://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.0030176">A macaque&#39;s-eye view of human insertions and deletions: differences in mechanisms</a></td>
+                        <td><em>PLoS Computational Biology</em></td>
+                      </tr>
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      <tr>
+                        <td>2006</td>
+                        <td>Goetting-Minesky MP, Makova KD.</td>
+                        <td><a href="http://link.springer.com/article/10.1007%2Fs00239-005-0308-8">Mammalian Male Mutation Bias: Impacts of Generation Time and Regional Variation in Substitution Rates</a></td>
+                        <td><em>Journal of Molecular Evolution</em></td>
+                      </tr>
+                      
+                      
+                      
+                      <tr>
+                        <td>2006</td>
+                        <td>Chung WY, Albert R, Albert I, Nekrutenko A, Makova KD.</td>
+                        <td><a href="http://www.biomedcentral.com/1471-2105/7/46">Rapid and asymmetric divergence of duplicate genes in the human gene coexpression network</a></td>
+                        <td><em>BMC Bioinformatics</em></td>
+                      </tr>
+                      
+                      
+                      
+                      <tr>
+                        <td>2006</td>
+                        <td>Taylor J, Tyekucheva S, Zody M, Chiaromonte F, Makova KD.</td>
+                        <td><a href="http://mbe.oxfordjournals.org/content/23/3/565.full.pdf">Strong and Weak Male Mutation Bias at Different Sites in the Primate Genomes: Insights from the Human-Chimpanzee Comparison</a></td>
+                        <td><em>Molecular Biology and Evolution</em></td>
+                      </tr>
+                      
+                      
+                      
+                      <tr>
+                        <td>2005</td>
+                        <td>Makova K, Norton H.</td>
+                        <td><a href="http://www.sciencedirect.com/science/article/pii/S0196978105002779">Worldwide polymorphism at the MC1R locus and normal pigmentation variation in humans</a></td>
+                        <td><em>Peptides</em></td>
+                      </tr>
+                      
+                      
+                      
+                      <tr>
+                        <td>2005</td>
+                        <td>The Chimpanzee Sequencing and Analysis Consortium (K. D. Makova - member)</td>
+                        <td><a href="http://www.nature.com/nature/journal/v437/n7055/full/nature04072.html">Initial sequence of the chimpanzee genome and comparison with the human genome</a></td>
+                        <td><em>Nature</em></td>
+                      </tr>
+                      
+                      
+                      
+                      <tr>
+                        <td>2005</td>
+                        <td>Nekrutenko A, Wadhawan S, Goetting-Minesky P, Makova KD.</td>
+                        <td><a href="http://journals.plos.org/plosgenetics/article?id=10.1371/journal.pgen.0010018">Oscillating Evolution of a Mammalian Locus with Overlapping Reading Frames: An XLas/ALEX Relay</a></td>
+                        <td><em>PloS Genetics</em></td>
+                      </tr>
+                      
+                      
+                      
+                      <tr>
+                        <td>2004</td>
+                        <td>Makova KD, Yang S, Chiaromonte F.</td>
+                        <td><a href="http://genome.cshlp.org/cgi/pmidlookup?view=long&amp;pmid=15059997">Indels are male-biased too: a whole genome analysis in rodents</a></td>
+                        <td><em>Genome Research</em></td>
+                      </tr>
+                      
+                      
+                      
+                      
+                      
+                      <tr>
+                        <td>2004</td>
+                        <td>Rat Genome Sequencing Project Consortium (K. D. Makova - member)</td>
+                        <td><a href="http://www.nature.com/nature/journal/v428/n6982/abs/nature02426.html">Evolution of the Mammalian Genome: sequence of the genome of the brown Norwegian Rat</a></td>
+                        <td><em>Nature</em></td>
+                      </tr>
+                      
+                      
+                      
+                      <tr>
+                        <td>2004</td>
+                        <td>International Chicken Genome Sequencing Consortium (K. D. Makova - member)</td>
+                        <td><a href="http://www.nature.com/nature/journal/v432/n7018/full/nature03154.html">Sequence and comparitive analysis of the chicken genome provide unique perspectives on vertebrate evolution</a></td>
+                        <td><em>Nature</em></td>
+                      </tr>
+                      
+                      
+                      
+                      <tr>
+                        <td>2003</td>
+                        <td>Makova KD, Li WH.</td>
+                        <td><a href="http://genome.cshlp.org/content/13/7/1638.full">Divergence in the spatial pattern of gene expression between human duplicate genes</a></td>
+                        <td><em>Genome Research</em></td>
+                      </tr>
+                      
+                      
+                      
+                      <tr>
+                        <td>2003</td>
+                        <td>John PR, Makova K, Li WH, Jenkins T, Ramsay M.</td>
+                        <td><a href="http://onlinelibrary.wiley.com/doi/10.1111/j.1749-6632.2003.tb03193.x/abstract">DNA polymorphism and selection at the melanocortin-1 receptor gene in normally pigmented southern African individuals</a></td>
+                        <td><em>Ann N Y Acad Sci</em></td>
+                      </tr>
+                      
+                      
+                      
+                      <tr>
+                        <td>2003</td>
+                        <td>Li WH, Makova KM.</td>
+                        <td><a href="http://www.els.net/WileyCDA/ElsArticle/refId-a0005097.html">Domain duplication and gene elongation</a></td>
+                        <td><em>Encyclopedia of the Human Genome (Nature Publishing Group)</em></td>
+                      </tr>
+                      
+                      
+                      
+                      <tr>
+                        <td>2002</td>
+                        <td>Li WH, Yi S, Makova K.</td>
+                        <td><a href="http://www.sciencedirect.com/science/article/pii/S0959437X02003544">Male-driven evolution</a></td>
+                        <td><em>Current Opinions in Genetics and Development.</em></td>
+                      </tr>
+                      
+                      
+                      
+                      <tr>
+                        <td>2002</td>
+                        <td>Mu J, Duan J, Makova KD, Joy DA, Huynh CQ, Branch OH, Li WH, Su XZ.</td>
+                        <td><a href="http://www.nature.com/nature/journal/v418/n6895/full/nature00836.html">Chromosome-wide SNPs reveal an ancient origin for Plasmodium falciparum</a></td>
+                        <td><em>Nature</em></td>
+                      </tr>
+                      
+                      
+                      
+                      <tr>
+                        <td>2002</td>
+                        <td>Makova KM, Li WH.</td>
+                        <td><a href="http://www.nature.com/nature/journal/v416/n6881/full/416624a.html">Strong male-driven evolution of DNA sequences in humans and apes</a></td>
+                        <td><em>Nature</em></td>
+                      </tr>
+                      
+                      
+                      
+                      <tr>
+                        <td>2002</td>
+                        <td>Nekrutenko A, Makova KD, Li WH.</td>
+                        <td><a href="http://www.ncbi.nlm.nih.gov/pmc/articles/PMC155263/">The KA/KS ratio test for assessing the protein-coding potential of genomic regions: An empirical and simulation study</a></td>
+                        <td><em>Genome Research</em></td>
+                      </tr>
+                      
+                      
+                      
+                      <tr>
+                        <td>2001</td>
+                        <td>Makova KD, Ramsay M, Jenkins T, Li WH.</td>
+                        <td><a href="http://www.ncbi.nlm.nih.gov/pmc/articles/PMC1461732/">Human DNA sequence variation in a 6.6-kilobase region containing the melanocortin 1 receptor promoter</a></td>
+                        <td><em>Genetics</em></td>
+                      </tr>
+                      
+                      
+                      
+                      <tr>
+                        <td>2001</td>
+                        <td>Liu JC, Makova KD, Adkins RM, Gibson S, Li WH.</td>
+                        <td><a href="http://mbe.oxfordjournals.org/content/18/6/945.long">Periods of rapid evolution of growth hormone in primates and emergence of species specificity of growth hormone receptor</a></td>
+                        <td><em>Molecular Biology and Evolution</em></td>
+                      </tr>
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
                     </table>
                 </div>
                 </div>
@@ -142,7 +564,1711 @@
 
           </div> <!-- panel -->
         </div>
-      {% endfor %}
+      
+        <div class="col-xs-12 col-md-12" style="padding:0px;">
+            <div class="panel panel-warning">
+            <div class="panel-heading">
+              <h2 class="panel-title">
+                <b>Mitochondrial mutation dynamics</b>
+                <span class="badge pull-right">Mt</span>
+               <button class="btn btn-warning btn-xs pull-right" data-toggle="modal" data-target="#Mt" title="Do you want to know more?" style="margin-right:3px;"><b>Read More</b></button>
+
+              </h2>
+            </div>
+            <div class="panel-body">
+              <p align="justify">With sequencing now possible at high depth, we aim to examine mutation process directly, by examining the DNA of children and their parents. Mitochondrial DNA (mtDNA) provides a good starting point for such an investigation due to its compact size and high mutation rate.</p>
+            </div>
+
+            <!-- Modal -->
+            <div class="modal fade" id="Mt"  tabindex="-1" role="dialog" aria-labelledby="MtLabel">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="MtLabel">Mitochondrial mutation dynamics</h4>
+                  </div>
+                  <div class="modal-body">
+                  <p align="justify">With sequencing now possible at high depth, we aim to examine mutation process directly, by examining the DNA of children and their parents. Mitochondrial DNA (mtDNA) provides a good starting point for such an investigation due to its compact size and high mutation rate. We have established an experimental and computational pipeline to study mtDNA mutations and heteroplasmy frequency shifts (Goto et al. 2011), therefore we are in great position to study the patterns and rates of mtDNA mutations at unprecedented detail. Our recent study suggested that mitochondrial DNA undergoes through a very small bottleneck during oogenesis and that the number of heteroplasmies in the offspring increases with maternal age at fertilization (Rebolledo Jaramillo, Su, et al. 2014). Collaborators: Anton Nekrutenko, Francesca Chiaromonte, Rasmus Nielsen (Figure : Afgan et al. 2011).</p>
+                  </div>
+
+                  <div class="col-md-12">
+                  <ul class="media-list">
+                  
+                  
+                    <li class="media">
+                      <div class="media-left">
+                        <a href="#">
+                          <img class="media-object" src="img/Barbara.png" alt="img/Barbara.png" style="height:150px; width:150px;">
+                        </a>
+                      </div>
+                      <div class="media-body">
+                        <h4 class="media-heading"><strong>Barbara Arbeithuber</strong></h4>
+                        <p align="justify">Postdoctoral Scholar<br>bxa15@psu.edu</p>
+                      </div>
+                    </li>
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                    <li class="media">
+                      <div class="media-left">
+                        <a href="#">
+                          <img class="media-object" src="img/bonnie.png" alt="img/bonnie.png" style="height:150px; width:150px;">
+                        </a>
+                      </div>
+                      <div class="media-body">
+                        <h4 class="media-heading"><strong>Bonnie K Higgins</strong></h4>
+                        <p align="justify">Research Technician<br>bkg102@psu.edu</p>
+                      </div>
+                    </li>
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                    <li class="media">
+                      <div class="media-left">
+                        <a href="#">
+                          <img class="media-object" src="img/nick.png" alt="img/nick.png" style="height:150px; width:150px;">
+                        </a>
+                      </div>
+                      <div class="media-body">
+                        <h4 class="media-heading"><strong>Nick Stoler</strong></h4>
+                        <p align="justify">Ph.D student, Program in Integrative Bioscience - Bioinformatics and Genomics - Co-advised by Anton Nekrutenko<br>nicholas.stoler@gmail.com</p>
+                      </div>
+                    </li>
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                    <li class="media">
+                      <div class="media-left">
+                        <a href="#">
+                          <img class="media-object" src="img/Arslan.png" alt="img/Arslan.png" style="height:150px; width:150px;">
+                        </a>
+                      </div>
+                      <div class="media-body">
+                        <h4 class="media-heading"><strong>Arslan Zaidi</strong></h4>
+                        <p align="justify">Postdoctoral Scholar<br>saz5078@psu.edu</p>
+                      </div>
+                    </li>
+                  
+                  
+                  </ul>
+                  </div>
+
+
+                  <div class="col-md-12">
+                  <ul class="media-list">
+                  
+                  
+                  
+                  
+                    <li class="media">
+                      <div class="media-left">
+                        <a href="#">
+                          <img class="media-object" src="img/francesca.png" alt="img/francesca.png" style="height:150px; width:150px;">
+                        </a>
+                      </div>
+                      <div class="media-body">
+                        <h4 class="media-heading"><strong>Francesca Chiaromonte</strong></h4>
+                        <p align="justify"><a href="https://sites.psu.edu/chiaromonte/">Department of Statistics - Pennsylvania State University</a></p>
+                      </div>
+                    </li>
+                  
+                  
+                  
+                  
+                  
+                    <li class="media">
+                      <div class="media-left">
+                        <a href="#">
+                          <img class="media-object" src="img/francisco.png" alt="img/francisco.png" style="height:150px; width:150px;">
+                        </a>
+                      </div>
+                      <div class="media-body">
+                        <h4 class="media-heading"><strong>Francisco J. Diaz</strong></h4>
+                        <p align="justify"><a href="http://animalscience.psu.edu/directory/fjd10">Associate Professor of Reproductive Biology</a></p>
+                      </div>
+                    </li>
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                    <li class="media">
+                      <div class="media-left">
+                        <a href="#">
+                          <img class="media-object" src="img/holland.png" alt="img/holland.png" style="height:150px; width:150px;">
+                        </a>
+                      </div>
+                      <div class="media-body">
+                        <h4 class="media-heading"><strong>Mitchell M. Holland</strong></h4>
+                        <p align="justify"><a href="http://forensics.psu.edu/faculty-staff/mmh20">Associate Professor, Biochemistry &amp; Molecular Biology</a></p>
+                      </div>
+                    </li>
+                  
+                  
+                  
+                  
+                  
+                    <li class="media">
+                      <div class="media-left">
+                        <a href="#">
+                          <img class="media-object" src="img/anton.png" alt="img/anton.png" style="height:150px; width:150px;">
+                        </a>
+                      </div>
+                      <div class="media-body">
+                        <h4 class="media-heading"><strong>Anton Nekrutenko</strong></h4>
+                        <p align="justify"><a href="http://www.bx.psu.edu/~anton/labSite/">Professor of Biochemistry and Molecular Biology - Pennsylvania State University</a></p>
+                      </div>
+                    </li>
+                  
+                  
+                  
+                    <li class="media">
+                      <div class="media-left">
+                        <a href="#">
+                          <img class="media-object" src="img/rasmus.png" alt="img/rasmus.png" style="height:150px; width:150px;">
+                        </a>
+                      </div>
+                      <div class="media-body">
+                        <h4 class="media-heading"><strong>Rasmus Nielsen</strong></h4>
+                        <p align="justify"><a href="http://cteg.berkeley.edu/nielsen.html">Center for Theoretical Evolutionary Genomics - University of California at Berkeley</a></p>
+                      </div>
+                    </li>
+                  
+                  
+                  
+                    <li class="media">
+                      <div class="media-left">
+                        <a href="#">
+                          <img class="media-object" src="img/ian.png" alt="img/ian.png" style="height:150px; width:150px;">
+                        </a>
+                      </div>
+                      <div class="media-body">
+                        <h4 class="media-heading"><strong>Ian Paul</strong></h4>
+                        <p align="justify"><a href="http://www.womenshealthcoe.psu.edu/bio_paul.htm">Professor of Pediatrics and Public Health Sciences - Penn State Hershey</a></p>
+                      </div>
+                    </li>
+                  
+                  
+                  
+                  
+                  </ul>
+                  </div>
+
+                  <div class="table"> 
+                    <table class="table table-hover">
+                      <tr>
+                        <th><span class="glyphicon glyphicon-calendar"></span></th>
+                        <th><span class="glyphicon glyphicon-user"></span></th>
+                        <th><span class="glyphicon glyphicon-file"></span></th>
+                        <th><span class="glyphicon glyphicon-book"></span></th>
+                      </tr>
+                      
+                      
+                      <tr>
+                        <td>2017</td>
+                        <td>Baker RJ, Dickins B, Wickliffe JK, Khan FA, Gaschak S, Makova K, Phillips CD.</td>
+                        <td><a href="http://onlinelibrary.wiley.com/doi/10.1111/eva.12475/abstract">Elevated mitochondrial genome variation after 50 generations of radiation exposure in a wild rodent</a></td>
+                        <td><em>Evolutionary Applications</em></td>
+                      </tr>
+                      
+                      
+                      
+                      
+                      
+                      <tr>
+                        <td>2016</td>
+                        <td>Stoler N, Arbeithuber B, Guiblet W, Makova KD, Nekrutenko A.</td>
+                        <td><a href="http://genomebiology.biomedcentral.com/articles/10.1186/s13059-016-1039-4">Streamlined analysis of duplex sequencing data with Du Novo</a></td>
+                        <td><em>Genome Biology</em></td>
+                      </tr>
+                      
+                      
+                      
+                      <tr>
+                        <td>2016</td>
+                        <td>Arbeithuber B, Makova KD, Tiemann-Boege I.</td>
+                        <td><a href="http://dnaresearch.oxfordjournals.org/content/early/2016/07/27/dnares.dsw038.full.pdf?keytype=ref&amp;ijkey=wzzYwZjQ8tWQAiV">Artifactual mutations resulting from DNA lesions limit detection levels in ultrasensitive sequencing applications</a></td>
+                        <td><em>DNA research</em></td>
+                      </tr>
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      <tr>
+                        <td>2014</td>
+                        <td>Rebolledo-Jaramillo B, Su MS, Stoler N, McElhoe JA, Dickins B, Blankenberg D, Korneliussen TS, Chiaromonte F, Nielsen R, Holland MM, Paul IM, Nekrutenko A, Makova KD.</td>
+                        <td><a href="http://www.pnas.org/content/111/43/15474.full">Maternal Age Effect and Severe Germline Bottleneck in the Inheritance of Human Mitochondrial DNA</a></td>
+                        <td><em>PNAS</em></td>
+                      </tr>
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      <tr>
+                        <td>2014</td>
+                        <td>McElhoe JA, Holland MM, Makova KD, Su MS, Paul IM, Baker CH, Faith SA, Young B.</td>
+                        <td><a href="http://www.sciencedirect.com/science/article/pii/S1872497314000994">Development and assessment of an optimized next-generation DNA sequencing approach for the mtgenome using the Illumina MiSeq</a></td>
+                        <td><em>Forensic Science International: Genetics</em></td>
+                      </tr>
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      <tr>
+                        <td>2014</td>
+                        <td>Dickins B, Rebolledo-Jaramillo B, Su MS3, Paul IM, Blankenberg D, Stoler N, Makova KD, Nekrutenko A.</td>
+                        <td><a href="http://www.biotechniques.com/BiotechniquesJournal/2014/March/Controlling-for-contamination-in-re-sequencing-studies-with-a-reproducible-web-based-phylogenetic-approach/biotechniques-350711.html">Controlling for contamination in re-sequencing studies with a reproducible web-based phylogenetic approach</a></td>
+                        <td><em>BioTechniques</em></td>
+                      </tr>
+                      
+                      
+                      
+                      
+                      
+                      <tr>
+                        <td>2013</td>
+                        <td>Steiner CC, Makova KD, Ryder OA.</td>
+                        <td><a href="http://onlinelibrary.wiley.com/doi/10.1002/9781118522158.ch19/summary">Mitochondrial Genome: Clues about the Evolution of Extant Equids and Genomic Diversity of Horse Breeds, in Equine Genomics</a></td>
+                        <td><em>(ed B. P. Chowdhary), Blackwell Publishing Ltd., Oxford, UK</em></td>
+                      </tr>
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      <tr>
+                        <td>2011</td>
+                        <td>Afgan E, Baker D, Coraor N, Goto H, Paul IM, Makova KD, Nekrutenko A, Taylor J.</td>
+                        <td><a href="http://www.nature.com/nbt/journal/v29/n11/abs/nbt.2028.html">Harnessing cloud-computing for biomedical research with Galaxy Cloud</a></td>
+                        <td><em>Nature Biotechnology</em></td>
+                      </tr>
+                      
+                      
+                      
+                      <tr>
+                        <td>2011</td>
+                        <td>Goto H, Ryder OA, Fisher AR, Schultz B, Kosakovsky Pond SL, Nekrutenko A, Makova KD.</td>
+                        <td><a href="http://gbe.oxfordjournals.org/cgi/pmidlookup?view=long&amp;pmid=21803766">A massively parallel sequencing approach uncovers ancient origins and high genetic variability of endangered Przewalski s horses</a></td>
+                        <td><em>Genome Biology and Evolution</em></td>
+                      </tr>
+                      
+                      
+                      
+                      
+                      
+                      <tr>
+                        <td>2011</td>
+                        <td>Goto H, Dickins B, Afgan E, Paul IM, Taylor J, Makova KD, Nekrutenko A.</td>
+                        <td><a href="http://www.genomebiology.com/2011/12/6/r59">Dynamics of mitochondrial heteroplasmy in three families investigated via a repeatable re-sequencing study</a></td>
+                        <td><em>Genome Biology</em></td>
+                      </tr>
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                    </table>
+                </div>
+                </div>
+              </div>
+            </div>
+
+
+
+
+          </div> <!-- panel -->
+        </div>
+      
+        <div class="col-xs-12 col-md-12" style="padding:0px;">
+            <div class="panel panel-danger">
+            <div class="panel-heading">
+              <h2 class="panel-title">
+                <b>Childhood obesity</b>
+                <span class="badge pull-right">O</span>
+               <button class="btn btn-danger btn-xs pull-right" data-toggle="modal" data-target="#O" title="Do you want to know more?" style="margin-right:3px;"><b>Read More</b></button>
+
+              </h2>
+            </div>
+            <div class="panel-body">
+              <p align="justify">Obesity is becoming the major epidemic of the 21st century, and we are studying this disease in an integrated way - from the perspective of genomics, microbiomics, and epigenomics. We are following a large group of newborn children until they are at least 3 years of age.</p>
+            </div>
+
+            <!-- Modal -->
+            <div class="modal fade" id="O"  tabindex="-1" role="dialog" aria-labelledby="OLabel">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="OLabel">Childhood obesity</h4>
+                  </div>
+                  <div class="modal-body">
+                  <p align="justify">Obesity is becoming the major epidemic of the 21st century, and we are studying this disease in an integrated way - from the perspective of genomics, microbiomics, and epigenomics. We are following a large group of newborn children until they are at least 3 years of age, and will be finding genes linked to the development of obesity in some of them. This collaboration includes clinicians, statisticians, and social scientists to obtain a multifaceted picture of this important phenotype. Collaborators: Ian Paul, Francesca Chiaromonte.</p>
+                  </div>
+
+                  <div class="col-md-12">
+                  <ul class="media-list">
+                  
+                  
+                  
+                  
+                    <li class="media">
+                      <div class="media-left">
+                        <a href="#">
+                          <img class="media-object" src="img/sarah.png" alt="img/sarah.png" style="height:150px; width:150px;">
+                        </a>
+                      </div>
+                      <div class="media-body">
+                        <h4 class="media-heading"><strong>Sarah J. Carnahan Craig</strong></h4>
+                        <p align="justify">Postdoctoral Scholar<br>sarah@bx.psu.edu	Lab : (814) 863-2185</p>
+                      </div>
+                    </li>
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                    <li class="media">
+                      <div class="media-left">
+                        <a href="#">
+                          <img class="media-object" src="img/bonnie.png" alt="img/bonnie.png" style="height:150px; width:150px;">
+                        </a>
+                      </div>
+                      <div class="media-body">
+                        <h4 class="media-heading"><strong>Bonnie K Higgins</strong></h4>
+                        <p align="justify">Research Technician<br>bkg102@psu.edu</p>
+                      </div>
+                    </li>
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  </ul>
+                  </div>
+
+
+                  <div class="col-md-12">
+                  <ul class="media-list">
+                  
+                  
+                  
+                  
+                    <li class="media">
+                      <div class="media-left">
+                        <a href="#">
+                          <img class="media-object" src="img/francesca.png" alt="img/francesca.png" style="height:150px; width:150px;">
+                        </a>
+                      </div>
+                      <div class="media-body">
+                        <h4 class="media-heading"><strong>Francesca Chiaromonte</strong></h4>
+                        <p align="justify"><a href="https://sites.psu.edu/chiaromonte/">Department of Statistics - Pennsylvania State University</a></p>
+                      </div>
+                    </li>
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                    <li class="media">
+                      <div class="media-left">
+                        <a href="#">
+                          <img class="media-object" src="img/ian.png" alt="img/ian.png" style="height:150px; width:150px;">
+                        </a>
+                      </div>
+                      <div class="media-body">
+                        <h4 class="media-heading"><strong>Ian Paul</strong></h4>
+                        <p align="justify"><a href="http://www.womenshealthcoe.psu.edu/bio_paul.htm">Professor of Pediatrics and Public Health Sciences - Penn State Hershey</a></p>
+                      </div>
+                    </li>
+                  
+                  
+                  
+                  
+                  </ul>
+                  </div>
+
+                  <div class="table"> 
+                    <table class="table table-hover">
+                      <tr>
+                        <th><span class="glyphicon glyphicon-calendar"></span></th>
+                        <th><span class="glyphicon glyphicon-user"></span></th>
+                        <th><span class="glyphicon glyphicon-file"></span></th>
+                        <th><span class="glyphicon glyphicon-book"></span></th>
+                      </tr>
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      <tr>
+                        <td>2014</td>
+                        <td>Paul IM, Williams JS, Anzman-Frasca S, Beiler JS, Makova KD, Marini ME, Hess LB, Rzucidlo SE, Verdiglione N, Mindell JA, Birch LL.</td>
+                        <td><a href="http://www.biomedcentral.com/1471-2431/14/184">The Intervention Nurses Start Infants Growing on Healthy Trajectories (INSIGHT) study</a></td>
+                        <td><em>BMC pediatrics</em></td>
+                      </tr>
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                    </table>
+                </div>
+                </div>
+              </div>
+            </div>
+
+
+
+
+          </div> <!-- panel -->
+        </div>
+      
+        <div class="col-xs-12 col-md-12" style="padding:0px;">
+            <div class="panel panel-success">
+            <div class="panel-heading">
+              <h2 class="panel-title">
+                <b>Microsatellite variation and evolution</b>
+                <span class="badge pull-right">Mc</span>
+               <button class="btn btn-success btn-xs pull-right" data-toggle="modal" data-target="#Mc" title="Do you want to know more?" style="margin-right:3px;"><b>Read More</b></button>
+
+              </h2>
+            </div>
+            <div class="panel-body">
+              <p align="justify">We have investigated microsatellite evolution in the framework of a life-cycle hypothesis, according to which microsatellites are born and expand into adulthood, until their degradation and death. Microsatellites are implicated in numerous diseases and used as markers in population genetics and forensics.</p>
+            </div>
+
+            <!-- Modal -->
+            <div class="modal fade" id="Mc"  tabindex="-1" role="dialog" aria-labelledby="McLabel">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="McLabel">Microsatellite variation and evolution</h4>
+                  </div>
+                  <div class="modal-body">
+                  <p align="justify">We have investigated microsatellite evolution in the framework of a life-cycle hypothesis, according to which microsatellites are born and expand into adulthood, until their degradation and death (Kelkar et al. 2011). Studies of microsatellite mutagenesis have significant utility, as microsatellites are implicated in numerous diseases and are popular markers in population genetics and forensics. To commence this project, we had to determine the minimal number of repeats constituting a microsatellite (Kelkar et al. 2010). Next, using sequenced primate genomes, we dissected the intricacies of the mutational processes leading to microsatellite birth and death (Kelkar et al. 2011). We also evaluated the contribution of transposable elements to microsatellite births and deaths, and described the mechanisms of births for many disease-causing microsatellites (Kelkar et al. 2011). We investigated how interruptions affect microsatellite mutability (Ananda et al. 2014) and developed a computational pipeline, STR-FM, to genotype microsatellites from next-generation sequencing data (Fungtammasan, Ananda, et al. 2015). (Figure: Kelkar et al. 2011). Collaborators: Kristin Eckert, Paul Medvedev, Francesca Chiaromonte.</p>
+                  </div>
+
+                  <div class="col-md-12">
+                  <ul class="media-list">
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                    <li class="media">
+                      <div class="media-left">
+                        <a href="#">
+                          <img class="media-object" src="img/wilfried.png" alt="img/wilfried.png" style="height:150px; width:150px;">
+                        </a>
+                      </div>
+                      <div class="media-body">
+                        <h4 class="media-heading"><strong>Wilfried Guiblet</strong></h4>
+                        <p align="justify">Ph.D student, Program in Integrative Bioscience - Bioinformatics and Genomics<br>wmg133@psu.edu</p>
+                      </div>
+                    </li>
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  </ul>
+                  </div>
+
+
+                  <div class="col-md-12">
+                  <ul class="media-list">
+                  
+                  
+                  
+                  
+                    <li class="media">
+                      <div class="media-left">
+                        <a href="#">
+                          <img class="media-object" src="img/francesca.png" alt="img/francesca.png" style="height:150px; width:150px;">
+                        </a>
+                      </div>
+                      <div class="media-body">
+                        <h4 class="media-heading"><strong>Francesca Chiaromonte</strong></h4>
+                        <p align="justify"><a href="https://sites.psu.edu/chiaromonte/">Department of Statistics - Pennsylvania State University</a></p>
+                      </div>
+                    </li>
+                  
+                  
+                  
+                    <li class="media">
+                      <div class="media-left">
+                        <a href="#">
+                          <img class="media-object" src="img/michael.png" alt="img/michael.png" style="height:150px; width:150px;">
+                        </a>
+                      </div>
+                      <div class="media-body">
+                        <h4 class="media-heading"><strong>Michael DeGiorgio</strong></h4>
+                        <p align="justify"><a href="http://www.personal.psu.edu/mxd60/people.html">Department of Biology</a></p>
+                      </div>
+                    </li>
+                  
+                  
+                  
+                  
+                  
+                    <li class="media">
+                      <div class="media-left">
+                        <a href="#">
+                          <img class="media-object" src="img/kristin.png" alt="img/kristin.png" style="height:150px; width:150px;">
+                        </a>
+                      </div>
+                      <div class="media-body">
+                        <h4 class="media-heading"><strong>Kristin Eckert</strong></h4>
+                        <p align="justify"><a href="http://www.huck.psu.edu/people/kae4">Department of Pathology - Penn State Medical School at Hershey</a></p>
+                      </div>
+                    </li>
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  </ul>
+                  </div>
+
+                  <div class="table"> 
+                    <table class="table table-hover">
+                      <tr>
+                        <th><span class="glyphicon glyphicon-calendar"></span></th>
+                        <th><span class="glyphicon glyphicon-user"></span></th>
+                        <th><span class="glyphicon glyphicon-file"></span></th>
+                        <th><span class="glyphicon glyphicon-book"></span></th>
+                      </tr>
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      <tr>
+                        <td>2016</td>
+                        <td>Fungtammasan A, Tomaszkiewicz M, Campos-Sánchez R, Eckert KA, DeGiorgio M, Makova KD.</td>
+                        <td><a href="http://mbe.oxfordjournals.org/content/early/2016/07/11/molbev.msw139.abstract?keytype=ref&amp;ijkey=vL8Oo9g8zVeNL8F">Reverse Transcription Errors and RNA-DNA Differences at Short Tandem Repeats</a></td>
+                        <td><em>Molecular Biology and Evolution</em></td>
+                      </tr>
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      <tr>
+                        <td>2015</td>
+                        <td>Fungtammasan A, Ananda G, Hile SE, Su MS, Sun C, Harris R, Medvedev P, Eckert K, Makova KD.</td>
+                        <td><a href="http://genome.cshlp.org/content/early/2015/03/30/gr.185892.114">Accurate Typing of Short Tandem Repeats from Genome-wide Sequencing Data and its Applications</a></td>
+                        <td><em>Genome Research</em></td>
+                      </tr>
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      <tr>
+                        <td>2014</td>
+                        <td>Ananda G, Hile SE, Breski A, Wang Y, Kelkar Y, Makova KD, Eckert KA.</td>
+                        <td><a href="http://journals.plos.org/plosgenetics/article?id=10.1371/journal.pgen.1004498">Microsatellite Interruptions Stabilize Primate Genomes and Exist as Population-Specific Single Nucleotide Polymorphisms within Individual Human Genomes</a></td>
+                        <td><em>PLoS Genet.</em></td>
+                      </tr>
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      <tr>
+                        <td>2013</td>
+                        <td>Montgomery SB, Goode DL, Kvikstad E, Albers CA, Zhang ZD, Mu XJ, Ananda G, Howie B, Karczewski KJ, Smith KS, Anaya V, Richardson R, Davis J; 1000 Genomes Project Consortium, MacArthur DG, Sidow A, Duret L, Gerstein M, Makova KD, Marchini J, McVean G, Lunter G.</td>
+                        <td><a href="http://genome.cshlp.org/content/early/2013/03/11/gr.148718.112.abstract">The origin, evolution, and functional impact of short insertion-deletion variants identified in 179 human genomes</a></td>
+                        <td><em>Genome Research</em></td>
+                      </tr>
+                      
+                      
+                      
+                      <tr>
+                        <td>2013</td>
+                        <td>Baptiste BA, Ananda G, Strubczewski N, Lutzkanin A, Khoo SJ, Srikanth A, Kim N, Makova KD, Krasilnikova MM, Eckert KA.</td>
+                        <td><a href="http://www.g3journal.org/cgi/pmidlookup?view=long&amp;pmid=23450065">Mature Microsatellites: Mechanisms Underlying Dinucleotide Microsatellite Mutational Biases in Human Cells</a></td>
+                        <td><em>Genes, Genomes, and Genetics</em></td>
+                      </tr>
+                      
+                      
+                      
+                      <tr>
+                        <td>2013</td>
+                        <td>Ananda G, Walsh E, Jacob KD, Krasilnikova M, Eckert KA, Chiaromonte F, Makova KD.</td>
+                        <td><a href="http://gbe.oxfordjournals.org/content/5/3/606/suppl/DC1">Distinct mutational behaviors distinguish short tandem repeats from microsatellites in the human genome</a></td>
+                        <td><em>Genome Biology and Evolution</em></td>
+                      </tr>
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      <tr>
+                        <td>2012</td>
+                        <td>Fungtammasan A, Walsh E, Chiaromonte F, Eckert KA, Makova KD.</td>
+                        <td><a href="http://genome.cshlp.org/cgi/pmidlookup?view=long&amp;pmid=22456607">A Genome-wide Analysis of Common Fragile Sites: What Features Determine Chromosomal Instability in the Human Genome?</a></td>
+                        <td><em>Genome Research</em></td>
+                      </tr>
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      <tr>
+                        <td>2011</td>
+                        <td>Kelkar YD, Eckert KA, Chiaromonte F, Makova KD.</td>
+                        <td><a href="http://genome.cshlp.org/cgi/pmidlookup?view=long&amp;pmid=21994250">A matter of life or death: How microsatellites emerge in and vanish from the human genome</a></td>
+                        <td><em>Genome Research</em></td>
+                      </tr>
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      <tr>
+                        <td>2010</td>
+                        <td>Kelkar YD, Strubczewski N, Hile SE, Chiaromonte F, Eckert KA, Makova KD.</td>
+                        <td><a href="http://gbe.oxfordjournals.org/cgi/pmidlookup?view=long&amp;pmid=20668018">What Is a Microsatellite: A Computational and Experimental Definition Based upon Repeat Mutational Behavior at A/T and GT/AC Repeats</a></td>
+                        <td><em>Genome Biol. Evol.</em></td>
+                      </tr>
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      <tr>
+                        <td>2008</td>
+                        <td>Kelkar YD, Tyekucheva S, Chiaromonte F, Makova KD.</td>
+                        <td><a href="http://genome.cshlp.org/content/18/1/30.long">The genome-wide determinants of human and chimpanzee microsatellite evolution</a></td>
+                        <td><em>Genome Research</em></td>
+                      </tr>
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      <tr>
+                        <td>2001</td>
+                        <td>Longmire JL, Roach JL, Maltbie M, White PS, Tatum OL, Makova KD, Hahn DC.</td>
+                        <td><a href="http://onlinelibrary.wiley.com/doi/10.1034/j.1600-048X.2001.320111.x/abstract">Tetranucleotide microsatellite markers for the brown-headed cowbird (Molothrus ater)</a></td>
+                        <td><em>Journal of Avian Biology</em></td>
+                      </tr>
+                      
+                      
+                      
+                      <tr>
+                        <td>2000</td>
+                        <td>Makova KD, Nekrutenko A, Baker RJ.</td>
+                        <td><a href="http://www.ncbi.nlm.nih.gov/pubmed/10948273">Evolution of Microsatellite Alleles in Four species of mice (genus Apodemus)</a></td>
+                        <td><em>Journal of Molecular Evolution</em></td>
+                      </tr>
+                      
+                      
+                      
+                      <tr>
+                        <td>2000</td>
+                        <td>Nekrutenko A, Makova KD, Baker RJ.</td>
+                        <td><a href="http://eurekamag.com/research/010/893/010893188.php">Isolation of binary species-specific PCR-based markers and their value for systematic applications</a></td>
+                        <td><em>Gene</em></td>
+                      </tr>
+                      
+                      
+                      
+                      <tr>
+                        <td>1999</td>
+                        <td>Nekrutenko A, Makova KD, Chesser RK, Baker RJ.</td>
+                        <td><a href="http://onlinelibrary.wiley.com/doi/10.1046/j.1365-294X.1999.00682_1.x/abstract">Representational Difference Analysis to distinguish cryptic species</a></td>
+                        <td><em>Molecular Ecology</em></td>
+                      </tr>
+                      
+                      
+                      
+                      <tr>
+                        <td>1999</td>
+                        <td>Baker RJ, Makova KD, Chesser RK.</td>
+                        <td><a href="http://onlinelibrary.wiley.com/doi/10.1046/j.1365-294X.1999.00541.x/abstract">Microsatellites indicate high frequency of multiple paternity in Apodemus (Rodentia)</a></td>
+                        <td><em>Molecular Ecology</em></td>
+                      </tr>
+                      
+                      
+                      
+                      <tr>
+                        <td>1998</td>
+                        <td>Makova KD, Patton JC, Krysanov EYu, Chesser RK, Baker RJ.</td>
+                        <td><a href="http://onlinelibrary.wiley.com/doi/10.1111/j.1365-294X.1998.00315.x/abstract">Microsatellite markers in wood mouse and striped field mouse (genus Apodemus)</a></td>
+                        <td><em>Molecular Ecology</em></td>
+                      </tr>
+                      
+                      
+                      
+                      <tr>
+                        <td>1998</td>
+                        <td>Makova KD, Patton JC.</td>
+                        <td><a href="http://www.ncbi.nlm.nih.gov/pubmed/9454948">Increased yield of tri- and tetranucleotide microsatellite markers from unenriched small-insert libraries</a></td>
+                        <td><em>BioTechniques</em></td>
+                      </tr>
+                      
+                      
+                    </table>
+                </div>
+                </div>
+              </div>
+            </div>
+
+
+
+
+          </div> <!-- panel -->
+        </div>
+      
+        <div class="col-xs-12 col-md-12" style="padding:0px;">
+            <div class="panel panel-info">
+            <div class="panel-heading">
+              <h2 class="panel-title">
+                <b>Sex chromosome evolution</b>
+                <span class="badge pull-right">S</span>
+               <button class="btn btn-info btn-xs pull-right" data-toggle="modal" data-target="#S" title="Do you want to know more?" style="margin-right:3px;"><b>Read More</b></button>
+
+              </h2>
+            </div>
+            <div class="panel-body">
+              <p align="justify">We are determining the gene repertoire and structure of the Y chromosome in several mammalian species. The Y chromosome has very high rates of mutation compared with other chromosomes in the mammalian genome due to a higher number of cell divisions in the male than female germ line.</p>
+            </div>
+
+            <!-- Modal -->
+            <div class="modal fade" id="S"  tabindex="-1" role="dialog" aria-labelledby="SLabel">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="SLabel">Sex chromosome evolution</h4>
+                  </div>
+                  <div class="modal-body">
+                  <p align="justify">Several lines of our recent research have had mammalian sex chromosome evolution as a common theme. We have been studying the genomic determinants of X chromosome inactivation (XCI; Carrel et al. 2006). By contrasting the evolution of genes on sex chromosomes in eutherians with that of their autosomal homologs in marsupials and monotremes, we were able to shed light on the earliest stages of eutherian sex chromosome evolution (Wilson and Makova 2009). We also recently generated a comprehensive list of pseudogenes on the human Y and studied what determines whether a gene will survive or die on this chromosome (Wilson Sayres and Makova 2013). To test whether selection or drift leads to loss of genes on chromosome Y, we sequenced and analyzed all X-degenerate Y chromosome genes in gorilla (Goto et al. 2009) and are currently characterizing such genes in other primates. (Figure : Wilson Sayres &amp; Makova 2013). Collaborators: Laura Carrel, Paul Medvedev.</p>
+                  </div>
+
+                  <div class="col-md-12">
+                  <ul class="media-list">
+                  
+                  
+                  
+                  
+                  
+                  
+                    <li class="media">
+                      <div class="media-left">
+                        <a href="#">
+                          <img class="media-object" src="img/monika.png" alt="img/monika.png" style="height:150px; width:150px;">
+                        </a>
+                      </div>
+                      <div class="media-body">
+                        <h4 class="media-heading"><strong>Monika Cechova (Michalovova)</strong></h4>
+                        <p align="justify">Ph.D student, Program in Biology<br>biomonika@psu.edu</p>
+                      </div>
+                    </li>
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                    <li class="media">
+                      <div class="media-left">
+                        <a href="#">
+                          <img class="media-object" src="img/samarth.png" alt="img/samarth.png" style="height:150px; width:150px;">
+                        </a>
+                      </div>
+                      <div class="media-body">
+                        <h4 class="media-heading"><strong>Samarth Rangavittal</strong></h4>
+                        <p align="justify">Ph.D student, Program in Integrative Bioscience - Bioinformatics and Genomics<br>szr165@psu.edu</p>
+                      </div>
+                    </li>
+                  
+                  
+                  
+                  
+                  
+                    <li class="media">
+                      <div class="media-left">
+                        <a href="#">
+                          <img class="media-object" src="img/marta.png" alt="img/marta.png" style="height:150px; width:150px;">
+                        </a>
+                      </div>
+                      <div class="media-body">
+                        <h4 class="media-heading"><strong>Marta Tomaszkiewicz</strong></h4>
+                        <p align="justify">Postdoctoral Scholar<br>marta@bx.psu.edu	Lab : (814) 863-2185</p>
+                      </div>
+                    </li>
+                  
+                  
+                  
+                    <li class="media">
+                      <div class="media-left">
+                        <a href="#">
+                          <img class="media-object" src="img/danling.png" alt="img/danling.png" style="height:150px; width:150px;">
+                        </a>
+                      </div>
+                      <div class="media-body">
+                        <h4 class="media-heading"><strong>Danling Ye</strong></h4>
+                        <p align="justify">Undergraduate Student, Program in Veterinary and Biomedical Sciences<br>dxy5063@psu.edu</p>
+                      </div>
+                    </li>
+                  
+                  
+                  
+                  
+                  
+                  
+                  </ul>
+                  </div>
+
+
+                  <div class="col-md-12">
+                  <ul class="media-list">
+                  
+                  
+                    <li class="media">
+                      <div class="media-left">
+                        <a href="#">
+                          <img class="media-object" src="img/laura.png" alt="img/laura.png" style="height:150px; width:150px;">
+                        </a>
+                      </div>
+                      <div class="media-body">
+                        <h4 class="media-heading"><strong>Laura Carrel</strong></h4>
+                        <p align="justify"><a href="https://profiles.psu.edu/profiles/display/113588">Department of Biochemistry and Molecular Biology - Penn State Medical School at Hershey</a></p>
+                      </div>
+                    </li>
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                    <li class="media">
+                      <div class="media-left">
+                        <a href="#">
+                          <img class="media-object" src="img/malcolm.png" alt="img/malcolm.png" style="height:150px; width:150px;">
+                        </a>
+                      </div>
+                      <div class="media-body">
+                        <h4 class="media-heading"><strong>Malcolm Ferguson-Smith</strong></h4>
+                        <p align="justify"><a href="http://www.vet.cam.ac.uk/directory/fs">Emeritus Professor of Pathology - University of Cambridge</a></p>
+                      </div>
+                    </li>
+                  
+                  
+                  
+                  
+                  
+                    <li class="media">
+                      <div class="media-left">
+                        <a href="#">
+                          <img class="media-object" src="img/paul.png" alt="img/paul.png" style="height:150px; width:150px;">
+                        </a>
+                      </div>
+                      <div class="media-body">
+                        <h4 class="media-heading"><strong>Paul Medvedev</strong></h4>
+                        <p align="justify"><a href="http://medvedevgroup.com/medvedev.html">Computer Science &amp; Engineering - Biochemistry &amp; Molecular Biology - Pennsylvania State University</a></p>
+                      </div>
+                    </li>
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                    <li class="media">
+                      <div class="media-left">
+                        <a href="#">
+                          <img class="media-object" src="img/oliver.png" alt="img/oliver.png" style="height:150px; width:150px;">
+                        </a>
+                      </div>
+                      <div class="media-body">
+                        <h4 class="media-heading"><strong>Oliver Ryder</strong></h4>
+                        <p align="justify"><a href="http://biology.ucsd.edu/faculty/ryder.html">San Diego Zoological Society</a></p>
+                      </div>
+                    </li>
+                  
+                  
+                  </ul>
+                  </div>
+
+                  <div class="table"> 
+                    <table class="table table-hover">
+                      <tr>
+                        <th><span class="glyphicon glyphicon-calendar"></span></th>
+                        <th><span class="glyphicon glyphicon-user"></span></th>
+                        <th><span class="glyphicon glyphicon-file"></span></th>
+                        <th><span class="glyphicon glyphicon-book"></span></th>
+                      </tr>
+                      
+                      
+                      
+                      
+                      <tr>
+                        <td>2017</td>
+                        <td>Tomaszkiewicz M, Medvedev P, Makova KD.</td>
+                        <td><a href="http://www.sciencedirect.com/science/article/pii/S0168952517300197">Y and W Chromosome Assemblies: Approaches and Discoveries</a></td>
+                        <td><em>Trends in Genetics</em></td>
+                      </tr>
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      <tr>
+                        <td>2016</td>
+                        <td>Tomaszkiewicz M, Rangavittal S, Cechova M, Campos Sanchez R, Fescemyer HW, Harris R, Ye D, O&#39;Brien PC, Chikhi R, Ryder OA, Ferguson-Smith MA, Medvedev P, Makova KD.</td>
+                        <td><a href="http://genome.cshlp.org/content/early/2016/02/26/gr.199448.115.abstract">A Time- and Cost-Effective Strategy to Sequence Mammalian Y Chromosomes: An Application to the de novo Assembly of Gorilla Y</a></td>
+                        <td><em>Genome Research</em></td>
+                      </tr>
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      <tr>
+                        <td>2013</td>
+                        <td>Kvikstad EM, Makova KD.</td>
+                        <td><a href="http://onlinelibrary.wiley.com/doi/10.1002/9780470015902.a0020858.pub2/abstract">Rapid Evolution of Genes on the Human X-chromosome.</a></td>
+                        <td><em>Encyclopedia of Life Sciences (ELS)</em></td>
+                      </tr>
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      <tr>
+                        <td>2013</td>
+                        <td>Wilson Sayres MA, Makova KD.</td>
+                        <td><a href="http://mbe.oxfordjournals.org/cgi/pmidlookup?view=long&amp;pmid=23223713">Gene survival and death on the human Y chromosome</a></td>
+                        <td><em>Molecular Biology and Evolution</em></td>
+                      </tr>
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      <tr>
+                        <td>2011</td>
+                        <td>Wilson Sayres MA, Makova KD.</td>
+                        <td><a href="http://onlinelibrary.wiley.com/doi/10.1002/bies.201100091/abstract">Genome analyses substantiate male mutation bias in many species</a></td>
+                        <td><em>Bioessays</em></td>
+                      </tr>
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      <tr>
+                        <td>2011</td>
+                        <td>Lombard Z, Park C, Makova KD, Ramsay M.</td>
+                        <td><a href="http://www.biologydirect.com/content/6/1/30">A Computational Approach to Candidate Gene Prioritization for X-Linked Mental Retardation using Annotation-based Binary Filtering and Motif-Based Linear Discriminatory Analysis</a></td>
+                        <td><em>Biology Direct</em></td>
+                      </tr>
+                      
+                      
+                      
+                      
+                      
+                      <tr>
+                        <td>2011</td>
+                        <td>Wilson Sayres MA, Venditti C, Pagel M, Makova KD.</td>
+                        <td><a href="http://onlinelibrary.wiley.com/doi/10.1111/j.1558-5646.2011.01337.x/abstract">Do variations in substitution rates and male mutation bias correlate with life history traits? A study of 32 mammalian genomes</a></td>
+                        <td><em>Evolution</em></td>
+                      </tr>
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      <tr>
+                        <td>2010</td>
+                        <td>Park C, Carrel L, Makova KD.</td>
+                        <td><a href="http://www.ncbi.nlm.nih.gov/pmc/articles/PMC2981488/">Strong Purifying Selection at Genes Escaping X Chromosome Inactivation</a></td>
+                        <td><em>Molecular Biology and Evolution</em></td>
+                      </tr>
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      <tr>
+                        <td>2009</td>
+                        <td>Wilson MA, Makova KD.</td>
+                        <td><a href="http://journals.plos.org/plosgenetics/article?id=10.1371/journal.pgen.1000568">Evolution and survival on eutherian sex chromosomes</a></td>
+                        <td><em>PLoS Genetics</em></td>
+                      </tr>
+                      
+                      
+                      
+                      <tr>
+                        <td>2009</td>
+                        <td>Wilson MA, Makova KD.</td>
+                        <td><a href="http://www.annualreviews.org/doi/full/10.1146/annurev-genom-082908-150105?url_ver=Z39.88-2003&amp;rfr_id=ori:rid:crossref.org&amp;rfr_dat=cr_pub%3dpubmed">Genomic analyses of sex chromosome evolution</a></td>
+                        <td><em>Annual Reviews of Human Genetics and Genomics</em></td>
+                      </tr>
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      <tr>
+                        <td>2009</td>
+                        <td>Goto H, Peng L, Makova KD.</td>
+                        <td><a href="http://link.springer.com/article/10.1007%2Fs00239-008-9189-y">Evolution of X-degenerate Y chromosome genes in greater apes: Conservation of gene content in human and gorilla, but not chimpanzee</a></td>
+                        <td><em>Journal of Molecular Evolution</em></td>
+                      </tr>
+                      
+                      
+                      
+                      <tr>
+                        <td>2009</td>
+                        <td>Lau AN, Peng L, Goto H, Chemnick L, Ryder OA, Makova KD.</td>
+                        <td><a href="http://mbe.oxfordjournals.org/content/26/1/199.abstract">Horse Domestication and Conservation Genetics of Przewalski&#39;s Horse Inferred from Sex Chromosomal and Autosomal Sequences</a></td>
+                        <td><em>Molecular Biology and Evolution</em></td>
+                      </tr>
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      <tr>
+                        <td>2007</td>
+                        <td>Rhesus Macaque Genome Sequencing and Analysis Consortium (K. D. Makova - member)</td>
+                        <td><a href="http://www.sciencemag.org/content/316/5822/222">Evolutionary and Biomedical Insights from the Rhesus Macaque Genome</a></td>
+                        <td><em>Science</em></td>
+                      </tr>
+                      
+                      
+                      
+                      <tr>
+                        <td>2006</td>
+                        <td>Carrel L, Park C, Tyekucheva S, Dunn J, Chiaromonte F, Makova KD.</td>
+                        <td><a href="http://journals.plos.org/plosgenetics/article?id=10.1371/journal.pgen.0020151">Genomic environment predicts expression patterns on the human inactive X chromosome</a></td>
+                        <td><em>PLoS Genet</em></td>
+                      </tr>
+                      
+                      
+                      
+                      <tr>
+                        <td>2006</td>
+                        <td>Goetting-Minesky MP, Makova KD.</td>
+                        <td><a href="http://link.springer.com/article/10.1007%2Fs00239-005-0308-8">Mammalian Male Mutation Bias: Impacts of Generation Time and Regional Variation in Substitution Rates</a></td>
+                        <td><em>Journal of Molecular Evolution</em></td>
+                      </tr>
+                      
+                      
+                      
+                      
+                      
+                      <tr>
+                        <td>2006</td>
+                        <td>Taylor J, Tyekucheva S, Zody M, Chiaromonte F, Makova KD.</td>
+                        <td><a href="http://mbe.oxfordjournals.org/content/23/3/565.full.pdf">Strong and Weak Male Mutation Bias at Different Sites in the Primate Genomes: Insights from the Human-Chimpanzee Comparison</a></td>
+                        <td><em>Molecular Biology and Evolution</em></td>
+                      </tr>
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      <tr>
+                        <td>2004</td>
+                        <td>Rat Genome Sequencing Project Consortium (K. D. Makova - member)</td>
+                        <td><a href="http://www.nature.com/nature/journal/v428/n6982/abs/nature02426.html">Evolution of the Mammalian Genome: sequence of the genome of the brown Norwegian Rat</a></td>
+                        <td><em>Nature</em></td>
+                      </tr>
+                      
+                      
+                      
+                      <tr>
+                        <td>2004</td>
+                        <td>International Chicken Genome Sequencing Consortium (K. D. Makova - member)</td>
+                        <td><a href="http://www.nature.com/nature/journal/v432/n7018/full/nature03154.html">Sequence and comparitive analysis of the chicken genome provide unique perspectives on vertebrate evolution</a></td>
+                        <td><em>Nature</em></td>
+                      </tr>
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      <tr>
+                        <td>2002</td>
+                        <td>Li WH, Yi S, Makova K.</td>
+                        <td><a href="http://www.sciencedirect.com/science/article/pii/S0959437X02003544">Male-driven evolution</a></td>
+                        <td><em>Current Opinions in Genetics and Development.</em></td>
+                      </tr>
+                      
+                      
+                      
+                      
+                      
+                      <tr>
+                        <td>2002</td>
+                        <td>Makova KM, Li WH.</td>
+                        <td><a href="http://www.nature.com/nature/journal/v416/n6881/full/416624a.html">Strong male-driven evolution of DNA sequences in humans and apes</a></td>
+                        <td><em>Nature</em></td>
+                      </tr>
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                    </table>
+                </div>
+                </div>
+              </div>
+            </div>
+
+
+
+
+          </div> <!-- panel -->
+        </div>
+      
       </div> <!-- row -->
 
 
@@ -165,13 +2291,31 @@
       <div class="panel-body">
 
         <ul class="media-list">
-          {% for article, author, anchor in context.blog %}
+          
           <li class="media">
             <div class="media-body">
-              <p align="justify"><a href="blog.html#{{anchor}}">{{article}} by {{author}}</a></p>
+              <p align="justify"><a href="blog.html#Makova_24_Nov_2015">Inheriting Your Advisor&#39;s Philosophy by Kateryna Makova - Nov 24th 2015</a></p>
             </div>
           </li>
-          {% endfor %}
+          
+          <li class="media">
+            <div class="media-body">
+              <p align="justify"><a href="blog.html#Rangavittal_18_Jan_2016">Un oeuf with the French puns already ! by Samarth Rangavittal - Jan 18th 2016</a></p>
+            </div>
+          </li>
+          
+          <li class="media">
+            <div class="media-body">
+              <p align="justify"><a href="blog.html#Craig_29_Feb_2016">Collaboration: Just As with Any Relationship, Open Communication Is the Key to Success by Sarah Craig - Feb 29th 2016</a></p>
+            </div>
+          </li>
+          
+          <li class="media">
+            <div class="media-body">
+              <p align="justify"><a href="blog.html#Cremona_10_Apr_2016">Treat statistics as a science, and not a recipe. by Marzia Cremona - April 10th 2016</a></p>
+            </div>
+          </li>
+          
         </ul>
 
       </div>
@@ -194,11 +2338,11 @@
       <div class="panel-body">
 
         <ul class="media-list">
-          {% for news, icon in context.news %}
+          
           <li class="media">
             <div class="media-left">
 
-              <i class="media-objet; fa fa-{{icon}}"></i>
+              <i class="media-objet; fa fa-thumbs-up"></i>
 
 <!--              <a href="#">
                 <img class="media-object" src="#" alt="#">
@@ -206,10 +2350,190 @@
 -->
             </div>
             <div class="media-body">
-              <p align="justify">{{news}}</p>
+              <p align="justify">April 27, 2017 : Congratulations to Danling for being the recipient of the 2017 Douglas and Regina Award for Research Achievement for her work in the lab on ampliconic gene copy numbers in the human Y chromosome!</p>
             </div>
           </li>
-          {% endfor %}
+          
+          <li class="media">
+            <div class="media-left">
+
+              <i class="media-objet; fa fa-file"></i>
+
+<!--              <a href="#">
+                <img class="media-object" src="#" alt="#">
+              </a>
+-->
+            </div>
+            <div class="media-body">
+              <p align="justify">February 21, 2017 : Marta Tomaszkiewicz reviews W and Y chromosome assemblies in the April 2017 issue of Trends in Genetics.</p>
+            </div>
+          </li>
+          
+          <li class="media">
+            <div class="media-left">
+
+              <i class="media-objet; fa fa-thumbs-up"></i>
+
+<!--              <a href="#">
+                <img class="media-object" src="#" alt="#">
+              </a>
+-->
+            </div>
+            <div class="media-body">
+              <p align="justify">Congratulations to Sarah Craig and Marta Tomaszkiewicz for winning the 1st and 2nd poster awards at the Center for Medical Genomics Retreat!</p>
+            </div>
+          </li>
+          
+          <li class="media">
+            <div class="media-left">
+
+              <i class="media-objet; fa fa-thumbs-up"></i>
+
+<!--              <a href="#">
+                <img class="media-object" src="#" alt="#">
+              </a>
+-->
+            </div>
+            <div class="media-body">
+              <p align="justify">Congratulations to Monika Cechova (Michalovova) on winning the 2016 Dr. John Randall Shuman Troxell Memorial Scholarship in Biology!</p>
+            </div>
+          </li>
+          
+          <li class="media">
+            <div class="media-left">
+
+              <i class="media-objet; fa fa-thumbs-up"></i>
+
+<!--              <a href="#">
+                <img class="media-object" src="#" alt="#">
+              </a>
+-->
+            </div>
+            <div class="media-body">
+              <p align="justify">Congratulations to the Gorilla Y Chromosome group for their paper being accepted in Genome Research !</p>
+            </div>
+          </li>
+          
+          <li class="media">
+            <div class="media-left">
+
+              <i class="media-objet; fa fa-thumbs-up"></i>
+
+<!--              <a href="#">
+                <img class="media-object" src="#" alt="#">
+              </a>
+-->
+            </div>
+            <div class="media-body">
+              <p align="justify">Congratulations to Malika Laurence for her grant awarded by the Undergraduate Research Fund !</p>
+            </div>
+          </li>
+          
+          <li class="media">
+            <div class="media-left">
+
+              <i class="media-objet; fa fa-thumbs-up"></i>
+
+<!--              <a href="#">
+                <img class="media-object" src="#" alt="#">
+              </a>
+-->
+            </div>
+            <div class="media-body">
+              <p align="justify">Congratulations to Marta Tomaszkiewicz for her 3rd place during the 8th Annual Postdoc Research Exhibition !</p>
+            </div>
+          </li>
+          
+          <li class="media">
+            <div class="media-left">
+
+              <i class="media-objet; fa fa-thumbs-up"></i>
+
+<!--              <a href="#">
+                <img class="media-object" src="#" alt="#">
+              </a>
+-->
+            </div>
+            <div class="media-body">
+              <p align="justify">Congratulations to Wilfried Guiblet on winning the Huck Dissertation Research Award 2015!</p>
+            </div>
+          </li>
+          
+          <li class="media">
+            <div class="media-left">
+
+              <i class="media-objet; fa fa-thumbs-up"></i>
+
+<!--              <a href="#">
+                <img class="media-object" src="#" alt="#">
+              </a>
+-->
+            </div>
+            <div class="media-body">
+              <p align="justify">Monika Cechova (Michalovova) receives the CBIOS predoctoral training grant from the NIH&#39;s National Institute of General Medical Sciences !</p>
+            </div>
+          </li>
+          
+          <li class="media">
+            <div class="media-left">
+
+              <i class="media-objet; fa fa-file"></i>
+
+<!--              <a href="#">
+                <img class="media-object" src="#" alt="#">
+              </a>
+-->
+            </div>
+            <div class="media-body">
+              <p align="justify">Read about our latest research on the maternal age affect on human mtDNA in the October 28, 2014 edition of PNAS.</p>
+            </div>
+          </li>
+          
+          <li class="media">
+            <div class="media-left">
+
+              <i class="media-objet; fa fa-thumbs-up"></i>
+
+<!--              <a href="#">
+                <img class="media-object" src="#" alt="#">
+              </a>
+-->
+            </div>
+            <div class="media-body">
+              <p align="justify">Makova Lab graduate students Rebeca and Samarth awarded the Jeanette Ritter Mohnkern Graduate Student Scholarship in Biology and Huck Dissertation Research Award respectively</p>
+            </div>
+          </li>
+          
+          <li class="media">
+            <div class="media-left">
+
+              <i class="media-objet; fa fa-thumbs-up"></i>
+
+<!--              <a href="#">
+                <img class="media-object" src="#" alt="#">
+              </a>
+-->
+            </div>
+            <div class="media-body">
+              <p align="justify">Congratulations to Sarah on winning the Penn State Clinical and Translational Science Institute Novel Methodologies in Health Research Award!</p>
+            </div>
+          </li>
+          
+          <li class="media">
+            <div class="media-left">
+
+              <i class="media-objet; fa fa-file"></i>
+
+<!--              <a href="#">
+                <img class="media-object" src="#" alt="#">
+              </a>
+-->
+            </div>
+            <div class="media-body">
+              <p align="justify">Read Rebeca&#39;s latest article in Molecular Biology and Evolution : Genomic Landscape of Human, Bat and Ex Vivo DNA Transposon Integrations</p>
+            </div>
+          </li>
+          
         </ul>
 
 
@@ -240,21 +2564,1085 @@
                 <th><span class="glyphicon glyphicon-book"></span></th>
                 <th></th>
               </tr>
-              {% for author, title, journal, year, url, badge in context.publications %}
+              
               <tr>
-                <td>{{year}}</td>
-                <td>{{author}}</td>
-                <td><a href="{{url}}">{{title}}</a></td>
-                <td><em>{{journal}}</em>
-                <td>{% if "R" in badge%}<span class="label label-primary">R</span>{%endif%}
-                    {% if "Mc" in badge%}<span class="label label-success">Mc</span>{%endif%}
-                    {% if "Mt" in badge%}<span class="label label-warning">Mt</span>{%endif%}
-                    {% if "S" in badge%}<span class="label label-info">S</span>{%endif%}
-                    {% if "O" in badge%}<span class="label label-danger">O</span>{%endif%}
+                <td>2017</td>
+                <td>Baker RJ, Dickins B, Wickliffe JK, Khan FA, Gaschak S, Makova K, Phillips CD.</td>
+                <td><a href="http://onlinelibrary.wiley.com/doi/10.1111/eva.12475/abstract">Elevated mitochondrial genome variation after 50 generations of radiation exposure in a wild rodent</a></td>
+                <td><em>Evolutionary Applications</em>
+                <td>
+                    
+                    <span class="label label-warning">Mt</span>
+                    
+                    
 
                    </td>
               </tr>
-              {% endfor %}
+              
+              <tr>
+                <td>2017</td>
+                <td>Tomaszkiewicz M, Medvedev P, Makova KD.</td>
+                <td><a href="http://www.sciencedirect.com/science/article/pii/S0168952517300197">Y and W Chromosome Assemblies: Approaches and Discoveries</a></td>
+                <td><em>Trends in Genetics</em>
+                <td>
+                    
+                    
+                    <span class="label label-info">S</span>
+                    
+
+                   </td>
+              </tr>
+              
+              <tr>
+                <td>2016</td>
+                <td>Stoler N, Arbeithuber B, Guiblet W, Makova KD, Nekrutenko A.</td>
+                <td><a href="http://genomebiology.biomedcentral.com/articles/10.1186/s13059-016-1039-4">Streamlined analysis of duplex sequencing data with Du Novo</a></td>
+                <td><em>Genome Biology</em>
+                <td>
+                    
+                    <span class="label label-warning">Mt</span>
+                    
+                    
+
+                   </td>
+              </tr>
+              
+              <tr>
+                <td>2016</td>
+                <td>Arbeithuber B, Makova KD, Tiemann-Boege I.</td>
+                <td><a href="http://dnaresearch.oxfordjournals.org/content/early/2016/07/27/dnares.dsw038.full.pdf?keytype=ref&amp;ijkey=wzzYwZjQ8tWQAiV">Artifactual mutations resulting from DNA lesions limit detection levels in ultrasensitive sequencing applications</a></td>
+                <td><em>DNA research</em>
+                <td>
+                    
+                    <span class="label label-warning">Mt</span>
+                    
+                    
+
+                   </td>
+              </tr>
+              
+              <tr>
+                <td>2016</td>
+                <td>Fungtammasan A, Tomaszkiewicz M, Campos-Sánchez R, Eckert KA, DeGiorgio M, Makova KD.</td>
+                <td><a href="http://mbe.oxfordjournals.org/content/early/2016/07/11/molbev.msw139.abstract?keytype=ref&amp;ijkey=vL8Oo9g8zVeNL8F">Reverse Transcription Errors and RNA-DNA Differences at Short Tandem Repeats</a></td>
+                <td><em>Molecular Biology and Evolution</em>
+                <td>
+                    <span class="label label-success">Mc</span>
+                    
+                    
+                    
+
+                   </td>
+              </tr>
+              
+              <tr>
+                <td>2016</td>
+                <td>Campos-Sánchez R, Cremona MA, Pini A, Chiaromonte, Makova KD.</td>
+                <td><a href="http://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1004956">Integration and Fixation Preferences of Human and Mouse Endogenous Retroviruses Uncovered with Functional Data Analysis</a></td>
+                <td><em>PLOS Computational Biology</em>
+                <td><span class="label label-primary">R</span>
+                    
+                    
+                    
+                    
+
+                   </td>
+              </tr>
+              
+              <tr>
+                <td>2016</td>
+                <td>Tomaszkiewicz M, Rangavittal S, Cechova M, Campos Sanchez R, Fescemyer HW, Harris R, Ye D, O&#39;Brien PC, Chikhi R, Ryder OA, Ferguson-Smith MA, Medvedev P, Makova KD.</td>
+                <td><a href="http://genome.cshlp.org/content/early/2016/02/26/gr.199448.115.abstract">A Time- and Cost-Effective Strategy to Sequence Mammalian Y Chromosomes: An Application to the de novo Assembly of Gorilla Y</a></td>
+                <td><em>Genome Research</em>
+                <td>
+                    
+                    
+                    <span class="label label-info">S</span>
+                    
+
+                   </td>
+              </tr>
+              
+              <tr>
+                <td>2015</td>
+                <td>Fungtammasan A, Ananda G, Hile SE, Su MS, Sun C, Harris R, Medvedev P, Eckert K, Makova KD.</td>
+                <td><a href="http://genome.cshlp.org/content/early/2015/03/30/gr.185892.114">Accurate Typing of Short Tandem Repeats from Genome-wide Sequencing Data and its Applications</a></td>
+                <td><em>Genome Research</em>
+                <td>
+                    <span class="label label-success">Mc</span>
+                    
+                    
+                    
+
+                   </td>
+              </tr>
+              
+              <tr>
+                <td>2015</td>
+                <td>Makova KD, Hardison RC.</td>
+                <td><a href="http://www.nature.com/nrg/journal/v16/n4/full/nrg3890.html">The effects of chromatin organization on variation in mutation rates in the genome</a></td>
+                <td><em>Nature Reviews Genetics</em>
+                <td><span class="label label-primary">R</span>
+                    
+                    
+                    
+                    
+
+                   </td>
+              </tr>
+              
+              <tr>
+                <td>2014</td>
+                <td>Chiaromonte F, Makova KD.</td>
+                <td><a href="http://link.springer.com/chapter/10.1007%2F978-3-319-11149-0_5">Using Statistics to Shed Light on the Dynamics of the Human Genome: A Review. Advances in Complex Data Modeling and Computational Methods in Statistics</a></td>
+                <td><em>Contributions to Statistics</em>
+                <td><span class="label label-primary">R</span>
+                    
+                    
+                    
+                    
+
+                   </td>
+              </tr>
+              
+              <tr>
+                <td>2014</td>
+                <td>Rebolledo-Jaramillo B, Su MS, Stoler N, McElhoe JA, Dickins B, Blankenberg D, Korneliussen TS, Chiaromonte F, Nielsen R, Holland MM, Paul IM, Nekrutenko A, Makova KD.</td>
+                <td><a href="http://www.pnas.org/content/111/43/15474.full">Maternal Age Effect and Severe Germline Bottleneck in the Inheritance of Human Mitochondrial DNA</a></td>
+                <td><em>PNAS</em>
+                <td>
+                    
+                    <span class="label label-warning">Mt</span>
+                    
+                    
+
+                   </td>
+              </tr>
+              
+              <tr>
+                <td>2014</td>
+                <td>Paul IM, Williams JS, Anzman-Frasca S, Beiler JS, Makova KD, Marini ME, Hess LB, Rzucidlo SE, Verdiglione N, Mindell JA, Birch LL.</td>
+                <td><a href="http://www.biomedcentral.com/1471-2431/14/184">The Intervention Nurses Start Infants Growing on Healthy Trajectories (INSIGHT) study</a></td>
+                <td><em>BMC pediatrics</em>
+                <td>
+                    
+                    
+                    
+                    <span class="label label-danger">O</span>
+
+                   </td>
+              </tr>
+              
+              <tr>
+                <td>2014</td>
+                <td>Ananda G, Hile SE, Breski A, Wang Y, Kelkar Y, Makova KD, Eckert KA.</td>
+                <td><a href="http://journals.plos.org/plosgenetics/article?id=10.1371/journal.pgen.1004498">Microsatellite Interruptions Stabilize Primate Genomes and Exist as Population-Specific Single Nucleotide Polymorphisms within Individual Human Genomes</a></td>
+                <td><em>PLoS Genet.</em>
+                <td>
+                    <span class="label label-success">Mc</span>
+                    
+                    
+                    
+
+                   </td>
+              </tr>
+              
+              <tr>
+                <td>2014</td>
+                <td>McElhoe JA, Holland MM, Makova KD, Su MS, Paul IM, Baker CH, Faith SA, Young B.</td>
+                <td><a href="http://www.sciencedirect.com/science/article/pii/S1872497314000994">Development and assessment of an optimized next-generation DNA sequencing approach for the mtgenome using the Illumina MiSeq</a></td>
+                <td><em>Forensic Science International: Genetics</em>
+                <td>
+                    
+                    <span class="label label-warning">Mt</span>
+                    
+                    
+
+                   </td>
+              </tr>
+              
+              <tr>
+                <td>2014</td>
+                <td>Campos-Sánchez R, Kapusta A, Feschotte C, Chiaromonte F, Makova KD.</td>
+                <td><a href="http://mbe.oxfordjournals.org/content/early/2014/04/22/molbev.msu138">Genomic Landscape of Human, Bat, and Ex Vivo DNA Transposon Integrations</a></td>
+                <td><em>Molecular Biology and Evolution</em>
+                <td><span class="label label-primary">R</span>
+                    
+                    
+                    
+                    
+
+                   </td>
+              </tr>
+              
+              <tr>
+                <td>2013</td>
+                <td>Kvikstad EM, Makova KD.</td>
+                <td><a href="http://onlinelibrary.wiley.com/doi/10.1002/9780470015902.a0020858.pub2/abstract">Rapid Evolution of Genes on the Human X-chromosome.</a></td>
+                <td><em>Encyclopedia of Life Sciences (ELS)</em>
+                <td>
+                    
+                    
+                    <span class="label label-info">S</span>
+                    
+
+                   </td>
+              </tr>
+              
+              <tr>
+                <td>2014</td>
+                <td>Dickins B, Rebolledo-Jaramillo B, Su MS3, Paul IM, Blankenberg D, Stoler N, Makova KD, Nekrutenko A.</td>
+                <td><a href="http://www.biotechniques.com/BiotechniquesJournal/2014/March/Controlling-for-contamination-in-re-sequencing-studies-with-a-reproducible-web-based-phylogenetic-approach/biotechniques-350711.html">Controlling for contamination in re-sequencing studies with a reproducible web-based phylogenetic approach</a></td>
+                <td><em>BioTechniques</em>
+                <td>
+                    
+                    <span class="label label-warning">Mt</span>
+                    
+                    
+
+                   </td>
+              </tr>
+              
+              <tr>
+                <td>2013</td>
+                <td>Kuruppumullage Don P, Ananda G, Chiaromonte F, Makova KD.</td>
+                <td><a href="http://www.pnas.org/content/110/36/14699.long">Segmenting the human genome based on states of neutral genetic divergence</a></td>
+                <td><em>Proceedings of the National Academy of Sciences</em>
+                <td><span class="label label-primary">R</span>
+                    
+                    
+                    
+                    
+
+                   </td>
+              </tr>
+              
+              <tr>
+                <td>2013</td>
+                <td>Steiner CC, Makova KD, Ryder OA.</td>
+                <td><a href="http://onlinelibrary.wiley.com/doi/10.1002/9781118522158.ch19/summary">Mitochondrial Genome: Clues about the Evolution of Extant Equids and Genomic Diversity of Horse Breeds, in Equine Genomics</a></td>
+                <td><em>(ed B. P. Chowdhary), Blackwell Publishing Ltd., Oxford, UK</em>
+                <td>
+                    
+                    <span class="label label-warning">Mt</span>
+                    
+                    
+
+                   </td>
+              </tr>
+              
+              <tr>
+                <td>2013</td>
+                <td>Montgomery SB, Goode DL, Kvikstad E, Albers CA, Zhang ZD, Mu XJ, Ananda G, Howie B, Karczewski KJ, Smith KS, Anaya V, Richardson R, Davis J; 1000 Genomes Project Consortium, MacArthur DG, Sidow A, Duret L, Gerstein M, Makova KD, Marchini J, McVean G, Lunter G.</td>
+                <td><a href="http://genome.cshlp.org/content/early/2013/03/11/gr.148718.112.abstract">The origin, evolution, and functional impact of short insertion-deletion variants identified in 179 human genomes</a></td>
+                <td><em>Genome Research</em>
+                <td>
+                    <span class="label label-success">Mc</span>
+                    
+                    
+                    
+
+                   </td>
+              </tr>
+              
+              <tr>
+                <td>2013</td>
+                <td>Baptiste BA, Ananda G, Strubczewski N, Lutzkanin A, Khoo SJ, Srikanth A, Kim N, Makova KD, Krasilnikova MM, Eckert KA.</td>
+                <td><a href="http://www.g3journal.org/cgi/pmidlookup?view=long&amp;pmid=23450065">Mature Microsatellites: Mechanisms Underlying Dinucleotide Microsatellite Mutational Biases in Human Cells</a></td>
+                <td><em>Genes, Genomes, and Genetics</em>
+                <td>
+                    <span class="label label-success">Mc</span>
+                    
+                    
+                    
+
+                   </td>
+              </tr>
+              
+              <tr>
+                <td>2013</td>
+                <td>Ananda G, Walsh E, Jacob KD, Krasilnikova M, Eckert KA, Chiaromonte F, Makova KD.</td>
+                <td><a href="http://gbe.oxfordjournals.org/content/5/3/606/suppl/DC1">Distinct mutational behaviors distinguish short tandem repeats from microsatellites in the human genome</a></td>
+                <td><em>Genome Biology and Evolution</em>
+                <td>
+                    <span class="label label-success">Mc</span>
+                    
+                    
+                    
+
+                   </td>
+              </tr>
+              
+              <tr>
+                <td>2013</td>
+                <td>Wilson Sayres MA, Makova KD.</td>
+                <td><a href="http://mbe.oxfordjournals.org/cgi/pmidlookup?view=long&amp;pmid=23223713">Gene survival and death on the human Y chromosome</a></td>
+                <td><em>Molecular Biology and Evolution</em>
+                <td>
+                    
+                    
+                    <span class="label label-info">S</span>
+                    
+
+                   </td>
+              </tr>
+              
+              <tr>
+                <td>2012</td>
+                <td>Wagstaff BJ, Hedges DJ, Derbes RS, Campos Sanchez R, Chiaromonte F, Makova KD, Roy-Engel AM.</td>
+                <td><a href="http://journals.plos.org/plosgenetics/article?id=10.1371/journal.pgen.1002842">Rescuing Alu: recovery of new inserts shows LINE-1 preserves Alu activity through A-tail expansion</a></td>
+                <td><em>PLoS Genetics</em>
+                <td><span class="label label-primary">R</span>
+                    
+                    
+                    
+                    
+
+                   </td>
+              </tr>
+              
+              <tr>
+                <td>2012</td>
+                <td>Fungtammasan A, Walsh E, Chiaromonte F, Eckert KA, Makova KD.</td>
+                <td><a href="http://genome.cshlp.org/cgi/pmidlookup?view=long&amp;pmid=22456607">A Genome-wide Analysis of Common Fragile Sites: What Features Determine Chromosomal Instability in the Human Genome?</a></td>
+                <td><em>Genome Research</em>
+                <td><span class="label label-primary">R</span>
+                    <span class="label label-success">Mc</span>
+                    
+                    
+                    
+
+                   </td>
+              </tr>
+              
+              <tr>
+                <td>2012</td>
+                <td>Wolfe K, Wayne ML, Makova K, Steen TY, Uyenoyama M, Takahata N.</td>
+                <td><a href="http://mbe.oxfordjournals.org/content/29/1/441.full">SMBE Proposal to the Government of Japan</a></td>
+                <td><em>Molecular Biology and Evolution</em>
+                <td>
+                    
+                    
+                    
+                    
+
+                   </td>
+              </tr>
+              
+              <tr>
+                <td>2011</td>
+                <td>Wilson Sayres MA, Makova KD.</td>
+                <td><a href="http://onlinelibrary.wiley.com/doi/10.1002/bies.201100091/abstract">Genome analyses substantiate male mutation bias in many species</a></td>
+                <td><em>Bioessays</em>
+                <td>
+                    
+                    
+                    <span class="label label-info">S</span>
+                    
+
+                   </td>
+              </tr>
+              
+              <tr>
+                <td>2011</td>
+                <td>Kelkar YD, Eckert KA, Chiaromonte F, Makova KD.</td>
+                <td><a href="http://genome.cshlp.org/cgi/pmidlookup?view=long&amp;pmid=21994250">A matter of life or death: How microsatellites emerge in and vanish from the human genome</a></td>
+                <td><em>Genome Research</em>
+                <td>
+                    <span class="label label-success">Mc</span>
+                    
+                    
+                    
+
+                   </td>
+              </tr>
+              
+              <tr>
+                <td>2011</td>
+                <td>Afgan E, Baker D, Coraor N, Goto H, Paul IM, Makova KD, Nekrutenko A, Taylor J.</td>
+                <td><a href="http://www.nature.com/nbt/journal/v29/n11/abs/nbt.2028.html">Harnessing cloud-computing for biomedical research with Galaxy Cloud</a></td>
+                <td><em>Nature Biotechnology</em>
+                <td>
+                    
+                    <span class="label label-warning">Mt</span>
+                    
+                    
+
+                   </td>
+              </tr>
+              
+              <tr>
+                <td>2011</td>
+                <td>Goto H, Ryder OA, Fisher AR, Schultz B, Kosakovsky Pond SL, Nekrutenko A, Makova KD.</td>
+                <td><a href="http://gbe.oxfordjournals.org/cgi/pmidlookup?view=long&amp;pmid=21803766">A massively parallel sequencing approach uncovers ancient origins and high genetic variability of endangered Przewalski s horses</a></td>
+                <td><em>Genome Biology and Evolution</em>
+                <td>
+                    
+                    <span class="label label-warning">Mt</span>
+                    
+                    
+
+                   </td>
+              </tr>
+              
+              <tr>
+                <td>2011</td>
+                <td>Lombard Z, Park C, Makova KD, Ramsay M.</td>
+                <td><a href="http://www.biologydirect.com/content/6/1/30">A Computational Approach to Candidate Gene Prioritization for X-Linked Mental Retardation using Annotation-based Binary Filtering and Motif-Based Linear Discriminatory Analysis</a></td>
+                <td><em>Biology Direct</em>
+                <td>
+                    
+                    
+                    <span class="label label-info">S</span>
+                    
+
+                   </td>
+              </tr>
+              
+              <tr>
+                <td>2011</td>
+                <td>Goto H, Dickins B, Afgan E, Paul IM, Taylor J, Makova KD, Nekrutenko A.</td>
+                <td><a href="http://www.genomebiology.com/2011/12/6/r59">Dynamics of mitochondrial heteroplasmy in three families investigated via a repeatable re-sequencing study</a></td>
+                <td><em>Genome Biology</em>
+                <td>
+                    
+                    <span class="label label-warning">Mt</span>
+                    
+                    
+
+                   </td>
+              </tr>
+              
+              <tr>
+                <td>2011</td>
+                <td>Wilson Sayres MA, Venditti C, Pagel M, Makova KD.</td>
+                <td><a href="http://onlinelibrary.wiley.com/doi/10.1111/j.1558-5646.2011.01337.x/abstract">Do variations in substitution rates and male mutation bias correlate with life history traits? A study of 32 mammalian genomes</a></td>
+                <td><em>Evolution</em>
+                <td><span class="label label-primary">R</span>
+                    
+                    
+                    <span class="label label-info">S</span>
+                    
+
+                   </td>
+              </tr>
+              
+              <tr>
+                <td>2011</td>
+                <td>Ananda G, Chiaromonte F, Makova KD.</td>
+                <td><a href="http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3129677/">A genome-wide view of mutation rate co-variation using multivariate analyses</a></td>
+                <td><em>Genome Biology</em>
+                <td><span class="label label-primary">R</span>
+                    
+                    
+                    
+                    
+
+                   </td>
+              </tr>
+              
+              <tr>
+                <td>2010</td>
+                <td>Kelkar YD, Strubczewski N, Hile SE, Chiaromonte F, Eckert KA, Makova KD.</td>
+                <td><a href="http://gbe.oxfordjournals.org/cgi/pmidlookup?view=long&amp;pmid=20668018">What Is a Microsatellite: A Computational and Experimental Definition Based upon Repeat Mutational Behavior at A/T and GT/AC Repeats</a></td>
+                <td><em>Genome Biol. Evol.</em>
+                <td>
+                    <span class="label label-success">Mc</span>
+                    
+                    
+                    
+
+                   </td>
+              </tr>
+              
+              <tr>
+                <td>2010</td>
+                <td>Park C, Carrel L, Makova KD.</td>
+                <td><a href="http://www.ncbi.nlm.nih.gov/pmc/articles/PMC2981488/">Strong Purifying Selection at Genes Escaping X Chromosome Inactivation</a></td>
+                <td><em>Molecular Biology and Evolution</em>
+                <td>
+                    
+                    
+                    <span class="label label-info">S</span>
+                    
+
+                   </td>
+              </tr>
+              
+              <tr>
+                <td>2010</td>
+                <td>Kvikstad EM, Makova KD.</td>
+                <td><a href="http://genome.cshlp.org/cgi/pmidlookup?view=long&amp;pmid=20219940">The (r)evolution of LINE and SINE distribution in the primate genomes: Sex chromosomes are important</a></td>
+                <td><em>Genome Research</em>
+                <td><span class="label label-primary">R</span>
+                    
+                    
+                    
+                    
+
+                   </td>
+              </tr>
+              
+              <tr>
+                <td>2010</td>
+                <td>Schuster SC, Miller W, Ratan A, Tomsho LP, Giardine B, Kasson LR, Harris RS, Petersen DC, Zhao F, Qi J, Alkan C, Kidd JM, Sun Y, Drautz DI, Bouffard P, Muzny DM, Reid JG, Nazareth LV, Wang Q, Burhans R, Riemer C, Wittekindt NE, Moorjani P, Tindall EA, Danko CG, Teo WS, Buboltz AM, Zhang Z, Ma Q, Oosthuysen A, Steenkamp AW, Oostuisen H, Venter P, Gajewski J, Zhang Y, Pugh BF, Makova KD, Nekrutenko A, Mardis ER, Patterson N, Pringle TH, Chiaromonte F, Mullikin JC, Eichler EE, Hardison RC, Gibbs RA, Harkins TT, Hayes VM.</td>
+                <td><a href="http://www.nature.com/nature/journal/v463/n7283/full/nature08795.html">Complete Khoisan and Bantu genomes from southern Africa</a></td>
+                <td><em>Nature</em>
+                <td>
+                    
+                    
+                    
+                    
+
+                   </td>
+              </tr>
+              
+              <tr>
+                <td>2009</td>
+                <td>Wilson MA, Makova KD.</td>
+                <td><a href="http://journals.plos.org/plosgenetics/article?id=10.1371/journal.pgen.1000568">Evolution and survival on eutherian sex chromosomes</a></td>
+                <td><em>PLoS Genetics</em>
+                <td>
+                    
+                    
+                    <span class="label label-info">S</span>
+                    
+
+                   </td>
+              </tr>
+              
+              <tr>
+                <td>2009</td>
+                <td>Wilson MA, Makova KD.</td>
+                <td><a href="http://www.annualreviews.org/doi/full/10.1146/annurev-genom-082908-150105?url_ver=Z39.88-2003&amp;rfr_id=ori:rid:crossref.org&amp;rfr_dat=cr_pub%3dpubmed">Genomic analyses of sex chromosome evolution</a></td>
+                <td><em>Annual Reviews of Human Genetics and Genomics</em>
+                <td>
+                    
+                    
+                    <span class="label label-info">S</span>
+                    
+
+                   </td>
+              </tr>
+              
+              <tr>
+                <td>2009</td>
+                <td>Kvikstad EM, Chiaromonte F, Makova KM.</td>
+                <td><a href="http://genome.cshlp.org/cgi/pmidlookup?view=long&amp;pmid=19502380">Ride the wavelet: a multi-scale analysis of genomic contexts flanking small insertions and deletions</a></td>
+                <td><em>Genome Research</em>
+                <td><span class="label label-primary">R</span>
+                    
+                    
+                    
+                    
+
+                   </td>
+              </tr>
+              
+              <tr>
+                <td>2009</td>
+                <td>Park C, Makova KD.</td>
+                <td><a href="http://www.ncbi.nlm.nih.gov/pmc/articles/PMC2687787/">Coding region structural heterogeneity and turnover of transcription start sites contribute to divergence in expression between duplicate genes</a></td>
+                <td><em>Genome Biology</em>
+                <td><span class="label label-primary">R</span>
+                    
+                    
+                    
+                    
+
+                   </td>
+              </tr>
+              
+              <tr>
+                <td>2009</td>
+                <td>Goto H, Peng L, Makova KD.</td>
+                <td><a href="http://link.springer.com/article/10.1007%2Fs00239-008-9189-y">Evolution of X-degenerate Y chromosome genes in greater apes: Conservation of gene content in human and gorilla, but not chimpanzee</a></td>
+                <td><em>Journal of Molecular Evolution</em>
+                <td>
+                    
+                    
+                    <span class="label label-info">S</span>
+                    
+
+                   </td>
+              </tr>
+              
+              <tr>
+                <td>2009</td>
+                <td>Lau AN, Peng L, Goto H, Chemnick L, Ryder OA, Makova KD.</td>
+                <td><a href="http://mbe.oxfordjournals.org/content/26/1/199.abstract">Horse Domestication and Conservation Genetics of Przewalski&#39;s Horse Inferred from Sex Chromosomal and Autosomal Sequences</a></td>
+                <td><em>Molecular Biology and Evolution</em>
+                <td>
+                    
+                    
+                    <span class="label label-info">S</span>
+                    
+
+                   </td>
+              </tr>
+              
+              <tr>
+                <td>2008</td>
+                <td>Tyekucheva S, Makova KD, Karro JE, Hardison RC, Miller W, Chiaromonte F.</td>
+                <td><a href="http://www.genomebiology.com/2008/9/4/R76">Human-macaque comparisons illuminate variation in neutral substitution rates</a></td>
+                <td><em>Genome Biology</em>
+                <td><span class="label label-primary">R</span>
+                    
+                    
+                    
+                    
+
+                   </td>
+              </tr>
+              
+              <tr>
+                <td>2008</td>
+                <td>Kelkar YD, Tyekucheva S, Chiaromonte F, Makova KD.</td>
+                <td><a href="http://genome.cshlp.org/content/18/1/30.long">The genome-wide determinants of human and chimpanzee microsatellite evolution</a></td>
+                <td><em>Genome Research</em>
+                <td>
+                    <span class="label label-success">Mc</span>
+                    
+                    
+                    
+
+                   </td>
+              </tr>
+              
+              <tr>
+                <td>2008</td>
+                <td>Li WH, Makova KD</td>
+                <td><a href="http://www.els.net/WileyCDA/ElsArticle/refId-a0005111.html">Molecular Clocks</a></td>
+                <td><em>Encyclopedia of Genetics (Academic Press)</em>
+                <td><span class="label label-primary">R</span>
+                    
+                    
+                    
+                    
+
+                   </td>
+              </tr>
+              
+              <tr>
+                <td>2007</td>
+                <td>Kvikstad EM, Tyekucheva S, Chiaromonte F, Makova KD.</td>
+                <td><a href="http://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.0030176">A macaque&#39;s-eye view of human insertions and deletions: differences in mechanisms</a></td>
+                <td><em>PLoS Computational Biology</em>
+                <td><span class="label label-primary">R</span>
+                    
+                    
+                    
+                    
+
+                   </td>
+              </tr>
+              
+              <tr>
+                <td>2007</td>
+                <td>Blankenberg D, Taylor J, Schenck I, He J, Zhang Y, Ghent M, Veeraraghavan N, Albert I, Miller W, Makova KD, Hardison RC, Nekrutenko A.</td>
+                <td><a href="http://genome.cshlp.org/content/17/6/960.long">A framework for collaborative analysis of ENCODE data: Making large-scale analyses biologist-friendly</a></td>
+                <td><em>Genome Research</em>
+                <td>
+                    
+                    
+                    
+                    
+
+                   </td>
+              </tr>
+              
+              <tr>
+                <td>2007</td>
+                <td>Rhesus Macaque Genome Sequencing and Analysis Consortium (K. D. Makova - member)</td>
+                <td><a href="http://www.sciencemag.org/content/316/5822/222">Evolutionary and Biomedical Insights from the Rhesus Macaque Genome</a></td>
+                <td><em>Science</em>
+                <td>
+                    
+                    
+                    <span class="label label-info">S</span>
+                    
+
+                   </td>
+              </tr>
+              
+              <tr>
+                <td>2006</td>
+                <td>Carrel L, Park C, Tyekucheva S, Dunn J, Chiaromonte F, Makova KD.</td>
+                <td><a href="http://journals.plos.org/plosgenetics/article?id=10.1371/journal.pgen.0020151">Genomic environment predicts expression patterns on the human inactive X chromosome</a></td>
+                <td><em>PLoS Genet</em>
+                <td>
+                    
+                    
+                    <span class="label label-info">S</span>
+                    
+
+                   </td>
+              </tr>
+              
+              <tr>
+                <td>2006</td>
+                <td>Goetting-Minesky MP, Makova KD.</td>
+                <td><a href="http://link.springer.com/article/10.1007%2Fs00239-005-0308-8">Mammalian Male Mutation Bias: Impacts of Generation Time and Regional Variation in Substitution Rates</a></td>
+                <td><em>Journal of Molecular Evolution</em>
+                <td><span class="label label-primary">R</span>
+                    
+                    
+                    <span class="label label-info">S</span>
+                    
+
+                   </td>
+              </tr>
+              
+              <tr>
+                <td>2006</td>
+                <td>Chung WY, Albert R, Albert I, Nekrutenko A, Makova KD.</td>
+                <td><a href="http://www.biomedcentral.com/1471-2105/7/46">Rapid and asymmetric divergence of duplicate genes in the human gene coexpression network</a></td>
+                <td><em>BMC Bioinformatics</em>
+                <td><span class="label label-primary">R</span>
+                    
+                    
+                    
+                    
+
+                   </td>
+              </tr>
+              
+              <tr>
+                <td>2006</td>
+                <td>Taylor J, Tyekucheva S, Zody M, Chiaromonte F, Makova KD.</td>
+                <td><a href="http://mbe.oxfordjournals.org/content/23/3/565.full.pdf">Strong and Weak Male Mutation Bias at Different Sites in the Primate Genomes: Insights from the Human-Chimpanzee Comparison</a></td>
+                <td><em>Molecular Biology and Evolution</em>
+                <td><span class="label label-primary">R</span>
+                    
+                    
+                    <span class="label label-info">S</span>
+                    
+
+                   </td>
+              </tr>
+              
+              <tr>
+                <td>2005</td>
+                <td>Makova K, Norton H.</td>
+                <td><a href="http://www.sciencedirect.com/science/article/pii/S0196978105002779">Worldwide polymorphism at the MC1R locus and normal pigmentation variation in humans</a></td>
+                <td><em>Peptides</em>
+                <td><span class="label label-primary">R</span>
+                    
+                    
+                    
+                    
+
+                   </td>
+              </tr>
+              
+              <tr>
+                <td>2005</td>
+                <td>The Chimpanzee Sequencing and Analysis Consortium (K. D. Makova - member)</td>
+                <td><a href="http://www.nature.com/nature/journal/v437/n7055/full/nature04072.html">Initial sequence of the chimpanzee genome and comparison with the human genome</a></td>
+                <td><em>Nature</em>
+                <td><span class="label label-primary">R</span>
+                    
+                    
+                    
+                    
+
+                   </td>
+              </tr>
+              
+              <tr>
+                <td>2005</td>
+                <td>Nekrutenko A, Wadhawan S, Goetting-Minesky P, Makova KD.</td>
+                <td><a href="http://journals.plos.org/plosgenetics/article?id=10.1371/journal.pgen.0010018">Oscillating Evolution of a Mammalian Locus with Overlapping Reading Frames: An XLas/ALEX Relay</a></td>
+                <td><em>PloS Genetics</em>
+                <td><span class="label label-primary">R</span>
+                    
+                    
+                    
+                    
+
+                   </td>
+              </tr>
+              
+              <tr>
+                <td>2004</td>
+                <td>Makova KD, Yang S, Chiaromonte F.</td>
+                <td><a href="http://genome.cshlp.org/cgi/pmidlookup?view=long&amp;pmid=15059997">Indels are male-biased too: a whole genome analysis in rodents</a></td>
+                <td><em>Genome Research</em>
+                <td><span class="label label-primary">R</span>
+                    
+                    
+                    
+                    
+
+                   </td>
+              </tr>
+              
+              <tr>
+                <td>2004</td>
+                <td>Miller W, Makova KM, Nekrutenko A, Hardison RC.</td>
+                <td><a href="http://www.annualreviews.org/doi/full/10.1146/annurev.genom.5.061903.180057?url_ver=Z39.88-2003&amp;rfr_id=ori:rid:crossref.org&amp;rfr_dat=cr_pub%3dpubmed&amp;">Comparitive Genomics</a></td>
+                <td><em>Annual Review of Genomics and Human Genetics</em>
+                <td>
+                    
+                    
+                    
+                    
+
+                   </td>
+              </tr>
+              
+              <tr>
+                <td>2004</td>
+                <td>Rat Genome Sequencing Project Consortium (K. D. Makova - member)</td>
+                <td><a href="http://www.nature.com/nature/journal/v428/n6982/abs/nature02426.html">Evolution of the Mammalian Genome: sequence of the genome of the brown Norwegian Rat</a></td>
+                <td><em>Nature</em>
+                <td><span class="label label-primary">R</span>
+                    
+                    
+                    <span class="label label-info">S</span>
+                    
+
+                   </td>
+              </tr>
+              
+              <tr>
+                <td>2004</td>
+                <td>International Chicken Genome Sequencing Consortium (K. D. Makova - member)</td>
+                <td><a href="http://www.nature.com/nature/journal/v432/n7018/full/nature03154.html">Sequence and comparitive analysis of the chicken genome provide unique perspectives on vertebrate evolution</a></td>
+                <td><em>Nature</em>
+                <td><span class="label label-primary">R</span>
+                    
+                    
+                    <span class="label label-info">S</span>
+                    
+
+                   </td>
+              </tr>
+              
+              <tr>
+                <td>2003</td>
+                <td>Makova KD, Li WH.</td>
+                <td><a href="http://genome.cshlp.org/content/13/7/1638.full">Divergence in the spatial pattern of gene expression between human duplicate genes</a></td>
+                <td><em>Genome Research</em>
+                <td><span class="label label-primary">R</span>
+                    
+                    
+                    
+                    
+
+                   </td>
+              </tr>
+              
+              <tr>
+                <td>2003</td>
+                <td>John PR, Makova K, Li WH, Jenkins T, Ramsay M.</td>
+                <td><a href="http://onlinelibrary.wiley.com/doi/10.1111/j.1749-6632.2003.tb03193.x/abstract">DNA polymorphism and selection at the melanocortin-1 receptor gene in normally pigmented southern African individuals</a></td>
+                <td><em>Ann N Y Acad Sci</em>
+                <td><span class="label label-primary">R</span>
+                    
+                    
+                    
+                    
+
+                   </td>
+              </tr>
+              
+              <tr>
+                <td>2003</td>
+                <td>Li WH, Makova KM.</td>
+                <td><a href="http://www.els.net/WileyCDA/ElsArticle/refId-a0005097.html">Domain duplication and gene elongation</a></td>
+                <td><em>Encyclopedia of the Human Genome (Nature Publishing Group)</em>
+                <td><span class="label label-primary">R</span>
+                    
+                    
+                    
+                    
+
+                   </td>
+              </tr>
+              
+              <tr>
+                <td>2002</td>
+                <td>Li WH, Yi S, Makova K.</td>
+                <td><a href="http://www.sciencedirect.com/science/article/pii/S0959437X02003544">Male-driven evolution</a></td>
+                <td><em>Current Opinions in Genetics and Development.</em>
+                <td><span class="label label-primary">R</span>
+                    
+                    
+                    <span class="label label-info">S</span>
+                    
+
+                   </td>
+              </tr>
+              
+              <tr>
+                <td>2002</td>
+                <td>Mu J, Duan J, Makova KD, Joy DA, Huynh CQ, Branch OH, Li WH, Su XZ.</td>
+                <td><a href="http://www.nature.com/nature/journal/v418/n6895/full/nature00836.html">Chromosome-wide SNPs reveal an ancient origin for Plasmodium falciparum</a></td>
+                <td><em>Nature</em>
+                <td><span class="label label-primary">R</span>
+                    
+                    
+                    
+                    
+
+                   </td>
+              </tr>
+              
+              <tr>
+                <td>2002</td>
+                <td>Makova KM, Li WH.</td>
+                <td><a href="http://www.nature.com/nature/journal/v416/n6881/full/416624a.html">Strong male-driven evolution of DNA sequences in humans and apes</a></td>
+                <td><em>Nature</em>
+                <td><span class="label label-primary">R</span>
+                    
+                    
+                    <span class="label label-info">S</span>
+                    
+
+                   </td>
+              </tr>
+              
+              <tr>
+                <td>2002</td>
+                <td>Nekrutenko A, Makova KD, Li WH.</td>
+                <td><a href="http://www.ncbi.nlm.nih.gov/pmc/articles/PMC155263/">The KA/KS ratio test for assessing the protein-coding potential of genomic regions: An empirical and simulation study</a></td>
+                <td><em>Genome Research</em>
+                <td><span class="label label-primary">R</span>
+                    
+                    
+                    
+                    
+
+                   </td>
+              </tr>
+              
+              <tr>
+                <td>2001</td>
+                <td>Makova KD, Ramsay M, Jenkins T, Li WH.</td>
+                <td><a href="http://www.ncbi.nlm.nih.gov/pmc/articles/PMC1461732/">Human DNA sequence variation in a 6.6-kilobase region containing the melanocortin 1 receptor promoter</a></td>
+                <td><em>Genetics</em>
+                <td><span class="label label-primary">R</span>
+                    
+                    
+                    
+                    
+
+                   </td>
+              </tr>
+              
+              <tr>
+                <td>2001</td>
+                <td>Liu JC, Makova KD, Adkins RM, Gibson S, Li WH.</td>
+                <td><a href="http://mbe.oxfordjournals.org/content/18/6/945.long">Periods of rapid evolution of growth hormone in primates and emergence of species specificity of growth hormone receptor</a></td>
+                <td><em>Molecular Biology and Evolution</em>
+                <td><span class="label label-primary">R</span>
+                    
+                    
+                    
+                    
+
+                   </td>
+              </tr>
+              
+              <tr>
+                <td>2001</td>
+                <td>Longmire JL, Roach JL, Maltbie M, White PS, Tatum OL, Makova KD, Hahn DC.</td>
+                <td><a href="http://onlinelibrary.wiley.com/doi/10.1034/j.1600-048X.2001.320111.x/abstract">Tetranucleotide microsatellite markers for the brown-headed cowbird (Molothrus ater)</a></td>
+                <td><em>Journal of Avian Biology</em>
+                <td>
+                    <span class="label label-success">Mc</span>
+                    
+                    
+                    
+
+                   </td>
+              </tr>
+              
+              <tr>
+                <td>2000</td>
+                <td>Makova KD, Nekrutenko A, Baker RJ.</td>
+                <td><a href="http://www.ncbi.nlm.nih.gov/pubmed/10948273">Evolution of Microsatellite Alleles in Four species of mice (genus Apodemus)</a></td>
+                <td><em>Journal of Molecular Evolution</em>
+                <td>
+                    <span class="label label-success">Mc</span>
+                    
+                    
+                    
+
+                   </td>
+              </tr>
+              
+              <tr>
+                <td>2000</td>
+                <td>Nekrutenko A, Makova KD, Baker RJ.</td>
+                <td><a href="http://eurekamag.com/research/010/893/010893188.php">Isolation of binary species-specific PCR-based markers and their value for systematic applications</a></td>
+                <td><em>Gene</em>
+                <td>
+                    <span class="label label-success">Mc</span>
+                    
+                    
+                    
+
+                   </td>
+              </tr>
+              
+              <tr>
+                <td>1999</td>
+                <td>Nekrutenko A, Makova KD, Chesser RK, Baker RJ.</td>
+                <td><a href="http://onlinelibrary.wiley.com/doi/10.1046/j.1365-294X.1999.00682_1.x/abstract">Representational Difference Analysis to distinguish cryptic species</a></td>
+                <td><em>Molecular Ecology</em>
+                <td>
+                    <span class="label label-success">Mc</span>
+                    
+                    
+                    
+
+                   </td>
+              </tr>
+              
+              <tr>
+                <td>1999</td>
+                <td>Baker RJ, Makova KD, Chesser RK.</td>
+                <td><a href="http://onlinelibrary.wiley.com/doi/10.1046/j.1365-294X.1999.00541.x/abstract">Microsatellites indicate high frequency of multiple paternity in Apodemus (Rodentia)</a></td>
+                <td><em>Molecular Ecology</em>
+                <td>
+                    <span class="label label-success">Mc</span>
+                    
+                    
+                    
+
+                   </td>
+              </tr>
+              
+              <tr>
+                <td>1998</td>
+                <td>Makova KD, Patton JC, Krysanov EYu, Chesser RK, Baker RJ.</td>
+                <td><a href="http://onlinelibrary.wiley.com/doi/10.1111/j.1365-294X.1998.00315.x/abstract">Microsatellite markers in wood mouse and striped field mouse (genus Apodemus)</a></td>
+                <td><em>Molecular Ecology</em>
+                <td>
+                    <span class="label label-success">Mc</span>
+                    
+                    
+                    
+
+                   </td>
+              </tr>
+              
+              <tr>
+                <td>1998</td>
+                <td>Makova KD, Patton JC.</td>
+                <td><a href="http://www.ncbi.nlm.nih.gov/pubmed/9454948">Increased yield of tri- and tetranucleotide microsatellite markers from unenriched small-insert libraries</a></td>
+                <td><em>BioTechniques</em>
+                <td>
+                    <span class="label label-success">Mc</span>
+                    
+                    
+                    
+
+                   </td>
+              </tr>
+              
             </table>
           </div>
         </div>
@@ -277,22 +3665,178 @@
       <div class="panel-body">
 
         <ul class="media-list">
-          {% for name, job, contact, interest, picture, BADGE, website in context.people %}
+          
           <li class="media">
             <div class="media-left">
               <a href="#">
-                <img class="media-object" src="img/{{picture}}" alt="{{picture}}" style="height:150px; width:150px;">
+                <img class="media-object" src="img/Barbara.png" alt="Barbara.png" style="height:150px; width:150px;">
               </a>
             </div>
             <div class="media-body">
-              <h4 class="media-heading"><strong>{{name}}</strong></h4>
-              <p align="justify">{{job}}<br>{{contact}}<br>{{interest}}<br>
-              {% if website != "NA" %}
-              <a href="{{website}}">My website</a>
-              {% endif %}</p>
+              <h4 class="media-heading"><strong>Barbara Arbeithuber</strong></h4>
+              <p align="justify">Postdoctoral Scholar<br>bxa15@psu.edu<br>I am interested in the accurate measurement of rare mutations. My current project focuses on the inheritance of mitochondrial DNA; particularly, I want analyze de novo mutations in the germ line, as well as the inheritance of low-level variants.<br>
+              </p>
             </div>
           </li>
-          {% endfor %}
+          
+          <li class="media">
+            <div class="media-left">
+              <a href="#">
+                <img class="media-object" src="img/sarah.png" alt="sarah.png" style="height:150px; width:150px;">
+              </a>
+            </div>
+            <div class="media-body">
+              <h4 class="media-heading"><strong>Sarah J. Carnahan Craig</strong></h4>
+              <p align="justify">Postdoctoral Scholar<br>sarah@bx.psu.edu	Lab : (814) 863-2185<br>I am generally interested in human evolution with a specific emphasis on genetic variation within and between species, gene duplication, and the evolution of regulatory elements. I find that the application of knowledge from these genetic investigations to explain (or help explain) phenotypic observations in humans (especially related to reproduction and human health) to be particularly exciting. My current project in the Makova Lab focuses on childhood obesity.<br>
+              </p>
+            </div>
+          </li>
+          
+          <li class="media">
+            <div class="media-left">
+              <a href="#">
+                <img class="media-object" src="img/monika.png" alt="monika.png" style="height:150px; width:150px;">
+              </a>
+            </div>
+            <div class="media-body">
+              <h4 class="media-heading"><strong>Monika Cechova (Michalovova)</strong></h4>
+              <p align="justify">Ph.D student, Program in Biology<br>biomonika@psu.edu<br>I enjoy bioinformatics as a tool to study evolution of sex chromosomes, transposable elements and gene expression. I am interested in topics covering RNASeq, variant calling, mapping, genome assembly and new sequencing technologies.<br>
+              
+              <a href="http://sites.psu.edu/biomonika/">My website</a>
+              </p>
+            </div>
+          </li>
+          
+          <li class="media">
+            <div class="media-left">
+              <a href="#">
+                <img class="media-object" src="img/bruce.png" alt="bruce.png" style="height:150px; width:150px;">
+              </a>
+            </div>
+            <div class="media-body">
+              <h4 class="media-heading"><strong>Di (Bruce) Chen</strong></h4>
+              <p align="justify">Ph.D student, Intercollege Graduate Program in Genetics<br>di.bruce.chen@gmail.com<br>Born and raised up in Nanjing, China. Trained as a computational biologist and amateur violinist. Big fan of backpacking, sci-fi, and research. Current work leverages bioinformatics tools and statistics in comparative genomics, with special interest in the regional variation of mutation rate in human genome.<br>
+              </p>
+            </div>
+          </li>
+          
+          <li class="media">
+            <div class="media-left">
+              <a href="#">
+                <img class="media-object" src="img/wilfried.png" alt="wilfried.png" style="height:150px; width:150px;">
+              </a>
+            </div>
+            <div class="media-body">
+              <h4 class="media-heading"><strong>Wilfried Guiblet</strong></h4>
+              <p align="justify">Ph.D student, Program in Integrative Bioscience - Bioinformatics and Genomics<br>wmg133@psu.edu<br>I am interested in the relationship between genomics and human physiology. My current project is to relate the different type of DNA polymerases and their variability to specific mutation patterns.<br>
+              </p>
+            </div>
+          </li>
+          
+          <li class="media">
+            <div class="media-left">
+              <a href="#">
+                <img class="media-object" src="img/bonnie.png" alt="bonnie.png" style="height:150px; width:150px;">
+              </a>
+            </div>
+            <div class="media-body">
+              <h4 class="media-heading"><strong>Bonnie K Higgins</strong></h4>
+              <p align="justify">Research Technician<br>bkg102@psu.edu<br>Mitochondrial change and inheritance patterns<br>
+              </p>
+            </div>
+          </li>
+          
+          <li class="media">
+            <div class="media-left">
+              <a href="#">
+                <img class="media-object" src="img/kateryna.png" alt="kateryna.png" style="height:150px; width:150px;">
+              </a>
+            </div>
+            <div class="media-body">
+              <h4 class="media-heading"><strong>Kateryna Makova, Ph.D.</strong></h4>
+              <p align="justify">Professor, Department of Biology 	Director, Center for Medical Genomics<br>kmakova@bx.psu.edu	Office: (814) 863-1619<br>Kateryna is interested in genomics, evolution, and human genetics. Her lab studies mutations using both computational and experimental approaches. Additional topics of interest include sex chromosome evolution and genomics of childhood obesity.<br>
+              </p>
+            </div>
+          </li>
+          
+          <li class="media">
+            <div class="media-left">
+              <a href="#">
+                <img class="media-object" src="img/samarth.png" alt="samarth.png" style="height:150px; width:150px;">
+              </a>
+            </div>
+            <div class="media-body">
+              <h4 class="media-heading"><strong>Samarth Rangavittal</strong></h4>
+              <p align="justify">Ph.D student, Program in Integrative Bioscience - Bioinformatics and Genomics<br>szr165@psu.edu<br>I am a grad student in the Bioinformatics and Genomics program. My primary interest is in genome assembly of short and long read sequence data. I also spend time thinking about topics like the sex chromosomes of primates, and how to mix computer science with biology in new and interesting ways.<br>
+              </p>
+            </div>
+          </li>
+          
+          <li class="media">
+            <div class="media-left">
+              <a href="#">
+                <img class="media-object" src="img/nick.png" alt="nick.png" style="height:150px; width:150px;">
+              </a>
+            </div>
+            <div class="media-body">
+              <h4 class="media-heading"><strong>Nick Stoler</strong></h4>
+              <p align="justify">Ph.D student, Program in Integrative Bioscience - Bioinformatics and Genomics - Co-advised by Anton Nekrutenko<br>nicholas.stoler@gmail.com<br>My focus is on variation in mitochondrial DNA. I develop methods and software tools to analyze mitochondrial sequencing data, as well as data from other non-diploid systems like viral populations, cancer, and somatic variation. More information at https://nstoler.com https://github.com/NickSto/<br>
+              </p>
+            </div>
+          </li>
+          
+          <li class="media">
+            <div class="media-left">
+              <a href="#">
+                <img class="media-object" src="img/marta.png" alt="marta.png" style="height:150px; width:150px;">
+              </a>
+            </div>
+            <div class="media-body">
+              <h4 class="media-heading"><strong>Marta Tomaszkiewicz</strong></h4>
+              <p align="justify">Postdoctoral Scholar<br>marta@bx.psu.edu	Lab : (814) 863-2185<br>From the very beginning of my studies, I have been trying to understand the evolution of sex chromosomes across invertebrate and vertebrate taxa. Now, my postdoctoral research is focused on the Y chromosomes of primates. Using comparative genomics tools I am trying to answer important questions linked to the male heterogamety of our closest relatives.<br>
+              </p>
+            </div>
+          </li>
+          
+          <li class="media">
+            <div class="media-left">
+              <a href="#">
+                <img class="media-object" src="img/danling.png" alt="danling.png" style="height:150px; width:150px;">
+              </a>
+            </div>
+            <div class="media-body">
+              <h4 class="media-heading"><strong>Danling Ye</strong></h4>
+              <p align="justify">Undergraduate Student, Program in Veterinary and Biomedical Sciences<br>dxy5063@psu.edu<br>I am an undergraduate student currently pursuing a degree in Veterinary and Biomedical Sciences. In the lab, I am helping with a project involving genetics on the Y chromosome. I am also interested in research about the genetics involved in reproduction.<br>
+              </p>
+            </div>
+          </li>
+          
+          <li class="media">
+            <div class="media-left">
+              <a href="#">
+                <img class="media-object" src="img/rahul.png" alt="rahul.png" style="height:150px; width:150px;">
+              </a>
+            </div>
+            <div class="media-body">
+              <h4 class="media-heading"><strong>Rahulsimham Vegesna</strong></h4>
+              <p align="justify">Ph.D student, Program in Integrative Bioscience - Bioinformatics and Genomics - Co-advised by Paul Medvedev<br>rxv923@psu.edu<br>I am interested in understanding the mechanism that give rise to complex genomic structural variants in cancer. I am studying the role of different DNA polymerases in the formation of different structural variations.<br>
+              </p>
+            </div>
+          </li>
+          
+          <li class="media">
+            <div class="media-left">
+              <a href="#">
+                <img class="media-object" src="img/Arslan.png" alt="Arslan.png" style="height:150px; width:150px;">
+              </a>
+            </div>
+            <div class="media-body">
+              <h4 class="media-heading"><strong>Arslan Zaidi</strong></h4>
+              <p align="justify">Postdoctoral Scholar<br>saz5078@psu.edu<br>I am interested in studying both the proximal (developmental) and ultimate (evolutionary) causes of human genetic variation. I am currently examining the transmission of mitochondrial heteroplasmies in families to understand the biological processes governing mitochondrial DNA inheritance in humans. When I’m not science-ing, I’m drawing or re-reading The Lord of the Rings.<br>
+              </p>
+            </div>
+          </li>
+          
         </ul>
 
         <ul class="media-list">
@@ -304,9 +3848,61 @@
             </div>
             <div class = "media-body">
               <h4 class ="media-heading"><strong>Alumni</strong></h4>
-              {%for alumni in context.alumni %}
-              <p align = "justify">{{alumni}}</p>
-              {% endfor %}
+              
+              <p align = "justify">Zaky Adam - Postdoctoral Scholar</p>
+              
+              <p align = "justify">Guru Ananda - Postdoctoral Scholar</p>
+              
+              <p align = "justify">Amanda Breski - Undergraduate student - Biology</p>
+              
+              <p align = "justify">Rebeca Campos-Sanchez - Ph.D student, Intercollege Graduate Program in Genetics</p>
+              
+              <p align = "justify">Benjamin Dickins - Postdoctoral Scholar</p>
+              
+              <p align = "justify">Prabhani Kuruppumullage Don - Ph.D. student - Statistics</p>
+              
+              <p align = "justify">Allison Fisher - Undergraduate student - Biology</p>
+              
+              <p align = "justify">Arkarachai Fungtammasan - Ph.D student - Bioinformatics and Genomics</p>
+              
+              <p align = "justify">Matthew Ghent - Undergraduate - Biochemistry</p>
+              
+              <p align = "justify">Aparna Goel - Undergraduate student</p>
+              
+              <p align = "justify">Paula Goetting - Senior research assistant</p>
+              
+              <p align = "justify">Hiroki Goto - Postdoctoral Scholar</p>
+              
+              <p align = "justify">Yogeshwar Kelkar - Ph.D. student - Biology</p>
+              
+              <p align = "justify">Lydia Krasilnikova - Undergraduate student - Computer Science</p>
+              
+              <p align = "justify">Erika Kvikstad - Ph.D. student - Genetics</p>
+              
+              <p align = "justify">Allison Lau - Undergrad - Biology</p>
+              
+              <p align = "justify">Malika Laurence - Undergraduate Student, Premedical-Medical Program</p>
+              
+              <p align = "justify">Ali Martinson - Undergraduate student - Biology</p>
+              
+              <p align = "justify">Matthew Nielsen - Undergraduate student - Biology</p>
+              
+              <p align = "justify">Chungoo Park - Ph.D. student - Biology</p>
+              
+              <p align = "justify">Lei Peng - Undergrad - Biology</p>
+              
+              <p align = "justify">Boris Rebolledo-Jaramillo - Ph.D. student - Bioinformatics and Genomics</p>
+              
+              <p align = "justify">Adil Sarwar - Ph.D. student - Computer Science</p>
+              
+              <p align = "justify">Marcia Shu-Wei Su - Postdoctoral Scholar</p>
+              
+              <p align = "justify">Melissa A. Wilson Sayres - Ph.D. student - Integrative Biosciences</p>
+              
+              <p align = "justify">Bryant Schultz - Undergraduate student - Biology</p>
+              
+              <p align = "justify">Carolyn Rogers - Undergraduate Student - Program in Biology</p>
+              
             </div>
           </li>
         </ul>
@@ -332,19 +3928,151 @@
 
 
         <ul class="media-list">
-          {% for name, job, picture, BADGE, url in context.collaborators %}
+          
           <li class="media">
             <div class="media-left">
               <a href="#">
-                <img class="media-object" src="img/{{picture}}" alt="{{picture}}" style="height:150px; width:150px;">
+                <img class="media-object" src="img/laura.png" alt="laura.png" style="height:150px; width:150px;">
               </a>
             </div>
             <div class="media-body">
-              <h4 class="media-heading"><strong>{{name}}</strong></h4>
-              <a href="{{url}}"><p align="justify">{{job}}</p></a>
+              <h4 class="media-heading"><strong>Laura Carrel</strong></h4>
+              <a href="https://profiles.psu.edu/profiles/display/113588"><p align="justify">Department of Biochemistry and Molecular Biology - Penn State Medical School at Hershey</p></a>
             </div>
           </li>
-          {% endfor %}
+          
+          <li class="media">
+            <div class="media-left">
+              <a href="#">
+                <img class="media-object" src="img/francesca.png" alt="francesca.png" style="height:150px; width:150px;">
+              </a>
+            </div>
+            <div class="media-body">
+              <h4 class="media-heading"><strong>Francesca Chiaromonte</strong></h4>
+              <a href="https://sites.psu.edu/chiaromonte/"><p align="justify">Department of Statistics - Pennsylvania State University</p></a>
+            </div>
+          </li>
+          
+          <li class="media">
+            <div class="media-left">
+              <a href="#">
+                <img class="media-object" src="img/michael.png" alt="michael.png" style="height:150px; width:150px;">
+              </a>
+            </div>
+            <div class="media-body">
+              <h4 class="media-heading"><strong>Michael DeGiorgio</strong></h4>
+              <a href="http://www.personal.psu.edu/mxd60/people.html"><p align="justify">Department of Biology</p></a>
+            </div>
+          </li>
+          
+          <li class="media">
+            <div class="media-left">
+              <a href="#">
+                <img class="media-object" src="img/francisco.png" alt="francisco.png" style="height:150px; width:150px;">
+              </a>
+            </div>
+            <div class="media-body">
+              <h4 class="media-heading"><strong>Francisco J. Diaz</strong></h4>
+              <a href="http://animalscience.psu.edu/directory/fjd10"><p align="justify">Associate Professor of Reproductive Biology</p></a>
+            </div>
+          </li>
+          
+          <li class="media">
+            <div class="media-left">
+              <a href="#">
+                <img class="media-object" src="img/kristin.png" alt="kristin.png" style="height:150px; width:150px;">
+              </a>
+            </div>
+            <div class="media-body">
+              <h4 class="media-heading"><strong>Kristin Eckert</strong></h4>
+              <a href="http://www.huck.psu.edu/people/kae4"><p align="justify">Department of Pathology - Penn State Medical School at Hershey</p></a>
+            </div>
+          </li>
+          
+          <li class="media">
+            <div class="media-left">
+              <a href="#">
+                <img class="media-object" src="img/malcolm.png" alt="malcolm.png" style="height:150px; width:150px;">
+              </a>
+            </div>
+            <div class="media-body">
+              <h4 class="media-heading"><strong>Malcolm Ferguson-Smith</strong></h4>
+              <a href="http://www.vet.cam.ac.uk/directory/fs"><p align="justify">Emeritus Professor of Pathology - University of Cambridge</p></a>
+            </div>
+          </li>
+          
+          <li class="media">
+            <div class="media-left">
+              <a href="#">
+                <img class="media-object" src="img/holland.png" alt="holland.png" style="height:150px; width:150px;">
+              </a>
+            </div>
+            <div class="media-body">
+              <h4 class="media-heading"><strong>Mitchell M. Holland</strong></h4>
+              <a href="http://forensics.psu.edu/faculty-staff/mmh20"><p align="justify">Associate Professor, Biochemistry &amp; Molecular Biology</p></a>
+            </div>
+          </li>
+          
+          <li class="media">
+            <div class="media-left">
+              <a href="#">
+                <img class="media-object" src="img/paul.png" alt="paul.png" style="height:150px; width:150px;">
+              </a>
+            </div>
+            <div class="media-body">
+              <h4 class="media-heading"><strong>Paul Medvedev</strong></h4>
+              <a href="http://medvedevgroup.com/medvedev.html"><p align="justify">Computer Science &amp; Engineering - Biochemistry &amp; Molecular Biology - Pennsylvania State University</p></a>
+            </div>
+          </li>
+          
+          <li class="media">
+            <div class="media-left">
+              <a href="#">
+                <img class="media-object" src="img/anton.png" alt="anton.png" style="height:150px; width:150px;">
+              </a>
+            </div>
+            <div class="media-body">
+              <h4 class="media-heading"><strong>Anton Nekrutenko</strong></h4>
+              <a href="http://www.bx.psu.edu/~anton/labSite/"><p align="justify">Professor of Biochemistry and Molecular Biology - Pennsylvania State University</p></a>
+            </div>
+          </li>
+          
+          <li class="media">
+            <div class="media-left">
+              <a href="#">
+                <img class="media-object" src="img/rasmus.png" alt="rasmus.png" style="height:150px; width:150px;">
+              </a>
+            </div>
+            <div class="media-body">
+              <h4 class="media-heading"><strong>Rasmus Nielsen</strong></h4>
+              <a href="http://cteg.berkeley.edu/nielsen.html"><p align="justify">Center for Theoretical Evolutionary Genomics - University of California at Berkeley</p></a>
+            </div>
+          </li>
+          
+          <li class="media">
+            <div class="media-left">
+              <a href="#">
+                <img class="media-object" src="img/ian.png" alt="ian.png" style="height:150px; width:150px;">
+              </a>
+            </div>
+            <div class="media-body">
+              <h4 class="media-heading"><strong>Ian Paul</strong></h4>
+              <a href="http://www.womenshealthcoe.psu.edu/bio_paul.htm"><p align="justify">Professor of Pediatrics and Public Health Sciences - Penn State Hershey</p></a>
+            </div>
+          </li>
+          
+          <li class="media">
+            <div class="media-left">
+              <a href="#">
+                <img class="media-object" src="img/oliver.png" alt="oliver.png" style="height:150px; width:150px;">
+              </a>
+            </div>
+            <div class="media-body">
+              <h4 class="media-heading"><strong>Oliver Ryder</strong></h4>
+              <a href="http://biology.ucsd.edu/faculty/ryder.html"><p align="justify">San Diego Zoological Society</p></a>
+            </div>
+          </li>
+          
         </ul>
 
 
