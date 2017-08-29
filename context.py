@@ -542,12 +542,19 @@ Trends in Genetics
 http://www.sciencedirect.com/science/article/pii/S0168952517300197
 S
 
-Baker RJ, Dickins B, Wickliffe JK, Khan FA, Gaschak S, Makova K, Phillips CD. 
+Baker RJ, Dickins B, Wickliffe JK, Khan FA, Gaschak S, Makova KD, Phillips CD. 
 Elevated mitochondrial genome variation after 50 generations of radiation exposure in a wild rodent
 Evolutionary Applications
 2017
 http://onlinelibrary.wiley.com/doi/10.1111/eva.12475/abstract
 Mt
+
+Warris S, Schijlen E, van de Geest H,  Vegesna R, Hesselink T, te Lintel Hekkert B, Sanchez-Perez G, Medvedev P, Makova KD, de Ridder D
+Correcting palindromes in long reads after whole-genome amplification
+bioRxiv
+2017
+http://www.biorxiv.org/content/early/2017/08/08/173872
+S
 
 """
 
@@ -599,6 +606,18 @@ Congratulations to Monika Cechova (Michalovova) on winning the 2016 Dr. John Ran
 thumbs-up
 
 Congratulations to Sarah Craig and Marta Tomaszkiewicz for winning the 1st and 2nd poster awards at the Center for Medical Genomics Retreat!
+thumbs-up
+
+February 21, 2017 : Marta Tomaszkiewicz reviews W and Y chromosome assemblies in the April 2017 issue of Trends in Genetics.
+file
+
+April 27, 2017 : Congratulations to Danling for being the recipient of the 2017 Douglas and Regina Award for Research Achievement for her work in the lab on ampliconic gene copy numbers in the human Y chromosome!
+thumbs-up
+
+July 25, 2017 : Barbara Arbeithuber is awarded the Erwin Schrödinger fellowship. Congrats!
+thumbs-up
+
+August 17, 2017 : Bruce is runner-up in the MCIBS & Pathobiology retreat poster competition. Congratulations!
 thumbs-up
 
 """
