@@ -549,11 +549,18 @@ Evolutionary Applications
 http://onlinelibrary.wiley.com/doi/10.1111/eva.12475/abstract
 Mt
 
+Rangavittal S, Harris R, Cechova M, Tomaszkiewicz M, Chikhi R, Makova KD, Medvedev P.
+RecoverY : K-mer based read classification for Y-chromosome specific sequencing and assembly
+bioRxiv
+2017
+http://www.biorxiv.org/content/early/2017/06/14/148114
+S
+
 Warris S, Schijlen E, van de Geest H,  Vegesna R, Hesselink T, te Lintel Hekkert B, Sanchez-Perez G, Medvedev P, Makova KD, de Ridder D
 Correcting palindromes in long reads after whole-genome amplification
 bioRxiv
 2017
-http://www.biorxiv.org/content/early/2017/08/08/173872
+http://www.biorxiv.org/content/early/2017/08/09/173872
 S
 
 """
