@@ -563,15 +563,15 @@ bioRxiv
 http://www.biorxiv.org/content/early/2017/08/09/173872
 S
 
-Peter Wilton, Arslan Zaidi, Kateryna Makova, Rasmus Nielsen
+Wilton P, Zaidi A, Makova KD, Nielsen R.
 A population phylogenetic view of mitochondrial heteroplasmy
 bioRxiv
 2017
 https://www.biorxiv.org/content/early/2017/10/17/204479
 Mt
 
+Craig S, Blankenberg D, Parodi A, Paul I, Birch L, Savage J, Marini M, Stokes J, Nekrutenko A, Reimherr M, Chiaromonte F, Makova KD.
 Infant Weight Gain Trajectories Linked To Oral Microbiome Composition
-Sarah Craig, Daniel Blankenberg, Alice Parodi, Ian Paul, Leann Birch, Jennifer Savage, Michele Marini, Jennifer Stokes, Anton Nekrutenko, Matthew Reimherr, Francesca Chiaromonte, Kateryna Makova
 bioRxiv
 2017
 https://www.biorxiv.org/content/early/2017/10/24/208090
