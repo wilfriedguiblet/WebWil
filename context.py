@@ -570,6 +570,13 @@ bioRxiv
 https://www.biorxiv.org/content/early/2017/10/17/204479
 Mt
 
+Infant Weight Gain Trajectories Linked To Oral Microbiome Composition
+Sarah Craig, Daniel Blankenberg, Alice Parodi, Ian Paul, Leann Birch, Jennifer Savage, Michele Marini, Jennifer Stokes, Anton Nekrutenko, Matthew Reimherr, Francesca Chiaromonte, Kateryna Makova
+bioRxiv
+2017
+https://www.biorxiv.org/content/early/2017/10/24/208090
+O
+
 """
 
 def publications():
