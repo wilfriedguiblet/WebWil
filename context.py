@@ -553,7 +553,7 @@ Rangavittal S, Harris R, Cechova M, Tomaszkiewicz M, Chikhi R, Makova KD, Medved
 RecoverY : K-mer based read classification for Y-chromosome specific sequencing and assembly
 bioRxiv
 2017
-http://www.biorxiv.org/content/early/2017/06/14/148114
+https://www.biorxiv.org/content/early/2017/11/27/148114
 S
 
 Warris S, Schijlen E, van de Geest H,  Vegesna R, Hesselink T, te Lintel Hekkert B, Sanchez-Perez G, Medvedev P, Makova KD, de Ridder D
@@ -640,6 +640,12 @@ thumbs-up
 
 August 17, 2017 : Bruce is runner-up in the MCIBS & Pathobiology retreat poster competition. Congratulations!
 thumbs-up
+
+October 31, 2017 : Di (Bruce) Chen's L1 project is selected for the "Future of Science Fund Scholarship" at the Mobile Genetic Elements meeting (2017). Congrats Bruce!
+thumbs-up
+
+November 23, 2017 : The Y-chromosome group's manuscript on read classification from Y-enriched data accepted for publication in Bioinformatics.
+file
 
 """
 
