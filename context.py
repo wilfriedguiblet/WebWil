@@ -641,6 +641,8 @@ thumbs-up
 August 17, 2017 : Bruce is runner-up in the MCIBS & Pathobiology retreat poster competition. Congratulations!
 thumbs-up
 
+December 18, 2017 : Marzia Cremona was awarded for the best presentation of an Early Career Investigator in the joint conference CFE-CMStatistics!
+thumbs-up
 """
 
 def news():
