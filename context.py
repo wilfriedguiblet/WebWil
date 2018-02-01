@@ -551,9 +551,9 @@ Mt
 
 Rangavittal S, Harris R, Cechova M, Tomaszkiewicz M, Chikhi R, Makova KD, Medvedev P.
 RecoverY : K-mer based read classification for Y-chromosome specific sequencing and assembly
-bioRxiv
+Bioinformatics
 2017
-http://www.biorxiv.org/content/early/2017/06/14/148114
+https://academic.oup.com/bioinformatics/advance-article/doi/10.1093/bioinformatics/btx771/4670683
 S
 
 Warris S, Schijlen E, van de Geest H,  Vegesna R, Hesselink T, te Lintel Hekkert B, Sanchez-Perez G, Medvedev P, Makova KD, de Ridder D
@@ -563,19 +563,40 @@ bioRxiv
 http://www.biorxiv.org/content/early/2017/08/09/173872
 S
 
-Wilton P, Zaidi A, Makova KD, Nielsen R.
-A population phylogenetic view of mitochondrial heteroplasmy
-bioRxiv
-2017
-https://www.biorxiv.org/content/early/2017/10/17/204479
-Mt
-
 Craig S, Blankenberg D, Parodi A, Paul I, Birch L, Savage J, Marini M, Stokes J, Nekrutenko A, Reimherr M, Chiaromonte F, Makova KD.
 Infant Weight Gain Trajectories Linked To Oral Microbiome Composition
 bioRxiv
 2017
 https://www.biorxiv.org/content/early/2017/10/24/208090
 O
+
+Ye D, Zaidi A, Tomaszkiewicz M, Liebowitz C, DeGiorgio M, Shriver MD, Makova KD.
+Copy number variation of ampliconic genes across major human Y haplogroups
+bioRxiv
+2017
+https://www.biorxiv.org/content/early/2017/12/20/230342
+S
+
+Wilton P, Zaidi A, Makova K, Nielsen R.
+A population phylogenetic view of mitochondrial heteroplasmy
+Genetics
+2018
+http://www.genetics.org/content/early/2018/01/17/genetics.118.300711
+Mt
+
+Guiblet W, Cremona MA, Cechova M, Harris R, Kejnovska I, Kejnovsky E, Eckert K, Chiaromonte F, Makova KD.
+Non-B DNA affects polymerization speed and error rate in sequencers and living cells
+bioRxiv
+2018
+https://www.biorxiv.org/content/early/2018/01/08/237461
+R
+
+Sahlin K, Tomaszkiewicz M, Makova KD, Medvedev P.
+IsoCon: Deciphering highly similar multigene family transcripts from Iso-Seq data
+bioRxiv
+2018
+https://www.biorxiv.org/content/early/2018/01/10/246066
+S
 
 """
 
